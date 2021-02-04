@@ -61,7 +61,7 @@ carolinechang2097@gmail.com
 * AWS Free tier, most likely Amazon Aurora/RDS
 
 ### Architecture Diagram
-![Imgur](https://imgur.com/tT9lijC.jpg)
+![Imgur](https://imgur.com/PqfgBgZ)
 
 
 ## Use Case Diagram
