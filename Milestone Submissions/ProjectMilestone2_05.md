@@ -2,8 +2,11 @@
 
 ## Team Information:
 Team: Brute Force
+
 Product Name: ClassView
+
 Team Number: 5
+
 Members:
 Omar Dajani
 John Korhel
