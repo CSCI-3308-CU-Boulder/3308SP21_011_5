@@ -1,6 +1,6 @@
-#Milestone 2
+# Milestone 2
 
-##Team Information:
+## Team Information:
 Team: Brute Force
 Product Name: ClassView
 Team Number: 5
@@ -11,7 +11,7 @@ Connor Liu Liu
 Matthew Zarifa
 Caroline Chang
 
-##Features:
+## Features:
 Post Questions:
 These can be posted either publicly or privately. This is so that students can get their questions answered from classmates, TAs, or Teachers.
 
@@ -44,67 +44,67 @@ Allow whoever created the post to accept a comment as an answer. Answers will al
 
 Search Bar: Students should be able to look up questions and see if they can find the answers from an older post.
 
-##Project Plan:
+## Project Plan:
 Our Team will be Using a Kanban Board with the Loose breakdown for completing various tasks:
 
-###Week 5: HTML, CSS
+### Week 5: HTML, CSS
 Design: Layout of site features.  (All of them.)
 Coded:
 Tested:
 Integrated: UI Diagram completed by end of the week.
 
-###Week 6: Client Side Javascript
+### Week 6: Client Side Javascript
 Design: Client Experience for UI features. (Search Bar, Login Page, Latex, Post and Respond to Questions.)
 Coded: Layout of site features. (All of them.)
 Tested:
 Integrated:
 
-###Week 7: SQL
+### Week 7: SQL
 Design: Database Features. (Login info, Search Bar keywords, Post settings (private and public), User settings, Activity Reports, and Blocking settings)
 Coded: Layout of site features. (All of them.), Client Experience for UI features. (Search Bar, Login Page, Latex, Post and Respond to Questions.)
 Tested:
 Integrated:
 
 
-###Week 8: Node JS
+### Week 8: Node JS
 Design: Back end features. (Functional Login, Functional Search Bar, Functional Upvote and Downvote, Functional Activity Reports, Functional Posting and Answering Question)
 Coded: Client Experience for UI features. (Search Bar, Login Page, Latex, Post and Respond to Questions.),  Database Features. (Login info, Search Bar keywords, Post settings (private and public), User settings, Activity Reports, and Blocking settings)
 Tested: Layout of site features. (All of them.)
 Integrated:
 
-###Week 9: Web Services
+### Week 9: Web Services
 Design: Administration Features. (Block/Time out time, User Management, Admin Management, Class Management. Accepting Questions)
 Coded:  Database Features. (Login info, Search Bar keywords, Post settings (private and public), User settings, Activity Reports, and Blocking settings), Back end features. (Functional Login, Functional Search Bar, Functional Upvote and Downvote, Functional Activity Reports, Functional Posting and Answering Questions)
 Tested: Client Experience for UI features. (Search Bar, Login Page, Latex, Post and Respond to Questions.)
 Integrated: Layout of site features. (All of them.)
 
-###Week 10:
+### Week 10:
 Design:
 Coded: Back end features. (Functional Login, Functional Search Bar, Functional Upvote and Downvote, Functional Activity Reports, Functional Posting and Answering Questions.), Administration Features. (Block/Time out time, User Management, Admin Management, Class Management. Accepting Questions)
 Tested:  Database Features. (Login info, Search Bar keywords, Post settings. (private and public), User settings, Activity Reports, and Blocking settings)
 Integrated: Client Experience for UI features. (Search Bar, Login Page, Latex, Post and Respond to Questions.)
 
-###Week 11:
+### Week 11:
 Design:
 Coded: Administration Features. (Block/Time out time, User Management, Admin Management, Class Management. Accepting Questions)
 Tested: Back end features (Functional Login, Functional Search Bar, Functional Upvote and Downvote, Functional Activity Reports, Functional Posting and Answering Questions.)
 Integrated:  Database Features. (Login info, Search Bar keywords, Post settings (private and public), User settings, Activity Reports, and Blocking settings)
 
-###Week 12:
+### Week 12:
 Design:
 Coded:
 Tested: Administration Features. (Block/Time out time, User Management, Admin Management, Class Management. Accepting Questions)
 Integrated: Back end features (Functional Login, Functional Search Bar, Functional Upvote and Downvote, Functional Activity Reports, Functional Posting and Answering Questions.)
 
-###Week 13:
+### Week 13:
 Design:
 Coded:
 Tested:
 Integrated: Administration Features. (Block/Time out time, User Management, Admin Management, Class Management. Accepting Questions)
 
-###Week 14: Show Time! 
+### Week 14: Show Time! 
 
-##WireFrame Design:
+## WireFrame Design:
 Pictures of hand drawn stuff are fine, only UI with consistent design through each page. Minimum, 3 pages.
 If we wanted to make some changes to this, there were a few features listed in the lecture. 
 https://wireframe.cc/
@@ -112,7 +112,7 @@ https://www.invisionapp.com/
 https://www.uxpin.com/
 https://balsamiq.com/
 
-##Individual Contributions:
+## Individual Contributions:
 Description of each member's contributions so far. Links to latest git commits which can feature anything related to the project (including commits). Should also be a link to the Kanban/Project Management Board.
 
 Matthew Zarifa:
