@@ -127,7 +127,7 @@ LINK TO WORK HERE
 
 Omar Dajani:
 Systems Lead: Helped coordinate schedule and plan out events.
-LINK TO WORK HERE
+https://tinyurl.com/1tyi7omn
 
 John Korhel:
 Team Lead: Has found the majority of the tools we will use, and offers technical experience for the Team.
