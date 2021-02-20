@@ -1,25 +1,17 @@
+<router-outlet></router-outlet>
 <mat-toolbar color="primary">
   <button
+    routerLink="/"
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
   >
-    <mat-icon>menu</mat-icon>
+    <mat-icon>home</mat-icon>
   </button>
   <span>ClassView</span>
   <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
+  <button routerLink="/register" mat-flat-button style="margin-right: 10px">
+    Register
   </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>share</mat-icon>
-  </button>
+  <button routerLink="/login" mat-flat-button>Login</button>
 </mat-toolbar>

@@ -1,0 +1,35 @@
+<router-outlet></router-outlet>
+<app-navbar></app-navbar>
+
+<div
+  class="formContainer"
+  fxLayout="column"
+  fxLayoutAlign="space-evenly center"
+>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter your email</mat-label>
+    <input
+      matInput
+      placeholder="pat@example.com"
+      [formControl]="email"
+      required
+    />
+    <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Enter Password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" />
+    <button
+      mat-icon-button
+      matSuffix
+      (click)="hide = !hide"
+      [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide"
+    >
+      <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+    </button>
+  </mat-form-field>
+  <button (click)="onLoginClick()" mat-flat-button color="primary">Login</button>
+</div>
