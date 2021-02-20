@@ -120,7 +120,7 @@ https://tinyurl.com/1whur7q5
 
 Connor Liu:
 Utility Lead: Works on sub projects within the team and offers assistance on a wide range of tasks.
-LINK TO WORK HERE
+https://tinyurl.com/2zntnlpq
 
 Omar Dajani:
 Systems Lead: Helped coordinate schedule and plan out events.
