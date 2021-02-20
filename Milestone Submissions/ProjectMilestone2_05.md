@@ -108,12 +108,8 @@ Integrated: Administration Features. (Block/Time out time, User Management, Admi
 ### Week 14: Show Time! 
 
 ## WireFrame Design:
-Pictures of hand drawn stuff are fine, only UI with consistent design through each page. Minimum, 3 pages.
-If we wanted to make some changes to this, there were a few features listed in the lecture. 
-https://wireframe.cc/
-https://www.invisionapp.com/ 
-https://www.uxpin.com/
-https://balsamiq.com/
+Here is a link to the wireframe directory.
+https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main/Site%20Mockups
 
 ## Individual Contributions:
 Description of each member's contributions so far. Links to latest git commits which can feature anything related to the project (including commits). Should also be a link to the Kanban/Project Management Board.
