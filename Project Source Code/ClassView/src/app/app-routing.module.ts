@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';     // Add you
 import { RegisterComponent } from './components/register/register.component';  // Add your component here
 import {LoginComponent} from './components/login/login.component'
 import {LoggedInComponent} from './components/logged-in/logged-in.component'
+import {ProfileComponent} from './components/profile/profile.component'
 
 //This is my case 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
     {
         path: 'loggedIn',
         component: LoggedInComponent
+    },
+    {
+        path: 'profile',
+        component: ProfileComponent
     }
 ];
 

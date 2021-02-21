@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './components/login/login.component';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoggedInComponent } from './components/logged-in/logged-in.component';
     NavbarComponent,
     RegisterComponent,
     LoginComponent,
-    LoggedInComponent
+    LoggedInComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

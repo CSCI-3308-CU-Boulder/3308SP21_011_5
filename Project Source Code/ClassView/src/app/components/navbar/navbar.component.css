@@ -1,3 +1,11 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+.menuElement{
+    background-color: transparent;
+    font-size: medium;
+    border-style: unset;
+    text-decoration: none;
+    color:white;
+}

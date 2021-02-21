@@ -1,0 +1,33 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.container{
+    width: 100%;
+}
+
+#imgMod{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.leftCol{
+    align-content: center;
+    text-align: center;
+    width: 40%;
+}
+
+.rightCol{
+    width: 54%;
+    padding: 4px;
+    align-content: center;
+}
+
+.editField{
+    min-height: 30% !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+}
+

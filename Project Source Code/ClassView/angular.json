@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ClassView"
+  "defaultProject": "ClassView",
+  "cli": {
+    "analytics": false
+  }
 }
