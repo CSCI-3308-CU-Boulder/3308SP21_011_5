@@ -13,6 +13,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './components/login/login.component';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     LoginComponent,
     LoggedInComponent,
     ProfileComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
