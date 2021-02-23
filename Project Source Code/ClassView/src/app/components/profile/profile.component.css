@@ -28,6 +28,17 @@
     min-height: 30%;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(207, 207, 207);
+    border-color: rgb(116, 116, 116);
 }
 
+.darkMode{
+    transition: 0.5s;
+    background-color: #474747;
+    color: #3150ff;
+}
+
+.lightMode{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}

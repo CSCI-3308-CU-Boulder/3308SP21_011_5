@@ -1,5 +1,5 @@
 <app-logged-in></app-logged-in>
-    <div class="container" fxLayout="row wrap">
+    <div class="container lightMode" fxLayout="row wrap">
         <div class = "leftCol">
             <div fxLayout="column wrap">
                 <div style="padding-top: 6%;">
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div style="padding-top: 15%;">
-                <mat-slide-toggle color="primary">Light/Dark Mode</mat-slide-toggle>
+                <mat-slide-toggle color="primary" (click)="changeColor()"><div id="LDtoggle">Light Mode</div></mat-slide-toggle>
             </div>
         </div>
         <div class = "rightCol" style="padding-top: 10px;">
@@ -27,21 +27,21 @@
                     <form (submit)="$event.preventDefault()">
                         <div fxLayout="column wrap">
                             <mat-form-field>
-                                <mat-label style="color:black;">Lyla Page</mat-label>
+                                <mat-label class=" lightMode ">Lyla Page</mat-label>
                                 <input matInput #Username>
                                 <mat-hint *ngIf="usernameAutofilled">Autofilled!</mat-hint>
-                              </mat-form-field>
-                              <mat-form-field>
-                                  <mat-label style="color:black;">lylaPage@classview.com</mat-label>
-                                  <input matInput #Email>
-                                  <mat-hint *ngIf="emailAutofilled">Autofilled!</mat-hint>
-                              </mat-form-field>
-                              <mat-form-field>
-                                  <mat-label style="color:black;">classViewR0cks!</mat-label>
-                                  <input matInput #Password>
-                                  <mat-hint *ngIf="passwordAutofilled">Autofilled!</mat-hint>
-                              </mat-form-field>
-                              <button mat-raised-button style="margin-right:auto; width: fit-content; background-color: #3f51b5; color:white;">
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label class=" lightMode ">lylaPage@classview.com</mat-label>
+                                <input matInput #Email>
+                                <mat-hint *ngIf="emailAutofilled">Autofilled!</mat-hint>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label class=" lightMode ">classViewR0cks!</mat-label>
+                                <input matInput #Password>
+                                <mat-hint *ngIf="passwordAutofilled">Autofilled!</mat-hint>
+                            </mat-form-field>
+                            <button mat-raised-button style="margin-right:auto; width: fit-content; background-color: #3f51b5; color:white;">
                                 Save Changes
                             </button>
                         </div>

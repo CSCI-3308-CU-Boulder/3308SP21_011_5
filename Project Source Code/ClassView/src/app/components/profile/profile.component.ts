@@ -52,4 +52,37 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
     this._autofill.stopMonitoring(this.email);
     this._autofill.stopMonitoring(this.password);
   }
+
+  changeColor(){
+    const darkness = document.getElementsByClassName('darkMode');
+    const lightness = document.getElementsByClassName('lightMode');
+    const formElis = document.getElementsByTagName('mat-label');
+    var toggler = document.getElementById('LDtoggle');
+    if(lightness.length > darkness.length){
+      toggler.innerHTML = 'Dark Mode';
+      for(let c = 0; c < lightness.length; c++){
+        const lux = lightness[c] as HTMLElement;
+        lux.classList.add('darkMode');
+        lux.classList.remove('lightMode');
+      }
+      for(let c = 0; c < formElis.length; c++){
+        const formEli = formElis[c] as HTMLElement;
+        formEli.classList.add('darkMode');
+        formEli.classList.remove('lightMode');
+      }
+    }
+    else{
+      toggler.innerHTML = 'Light Mode';
+      for(let c = 0; c < darkness.length; c++){
+        const nyx = darkness[c] as HTMLElement;
+        nyx.classList.add('lightMode');
+        nyx.classList.remove('darkMode');
+      }
+      for(let c = 0; c < formElis.length; c++){
+        const formEli = formElis[c] as HTMLElement;
+        formEli.classList.add('lightMode');
+        formEli.classList.remove('darkMode');
+      }
+    }
+  }
 }
