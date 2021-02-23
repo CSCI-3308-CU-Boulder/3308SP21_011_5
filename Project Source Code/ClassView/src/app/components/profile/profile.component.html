@@ -1,66 +1,65 @@
-<router-outlet></router-outlet>
-<app-navbar></app-navbar>
-<div class="container" fxLayout="row wrap">
-    <div class = "leftCol">
-        <div fxLayout="column wrap">
-            <div style="padding-top: 6%;">
-                <div>
-                    <label class="hoverable" for="fileInput">
-                    <img id="imgMod" [src]="url ? url : 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'"> 
-                    <div class="background"></div>
-                    </label>
-                    <br/>
-                    <div fxLayout="column wrap">
-                        <input style="margin-left: 35%;" id="fileInput" type='file' (change)="onSelectFile($event)">
-                        <button style="margin-left: 46%; width: 52px; margin-top: 8px;" *ngIf="url" (click)="delete()" >delete</button>
+<app-logged-in></app-logged-in>
+    <div class="container" fxLayout="row wrap">
+        <div class = "leftCol">
+            <div fxLayout="column wrap">
+                <div style="padding-top: 6%;">
+                    <div>
+                        <label class="hoverable" for="fileInput">
+                        <img id="imgMod" [src]="url ? url : 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'"> 
+                        <div class="background"></div>
+                        </label>
+                        <br/>
+                        <div fxLayout="column wrap">
+                            <input style="margin-left: 35%;" id="fileInput" type='file' (change)="onSelectFile($event)">
+                            <button style="margin-left: 46%; width: 52px; margin-top: 8px;" *ngIf="url" (click)="delete()" >delete</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div style="padding-top: 15%;">
-            <mat-slide-toggle color="primary">Light/Dark Mode</mat-slide-toggle>
-        </div>
-    </div>
-    <div class = "rightCol" style="padding-top: 10px;">
-        <h3 style="padding: 4px;">Profile Information:</h3>
-        <div fxLayout="column wrap">
-            <div style="padding: 20px;" class = "editField">
-                <form (submit)="$event.preventDefault()">
-                    <div fxLayout="column wrap">
-                        <mat-form-field>
-                            <mat-label style="color:black;">Lyla Page</mat-label>
-                            <input matInput #Username>
-                            <mat-hint *ngIf="usernameAutofilled">Autofilled!</mat-hint>
-                          </mat-form-field>
-                          <mat-form-field>
-                              <mat-label style="color:black;">lylaPage@classview.com</mat-label>
-                              <input matInput #Email>
-                              <mat-hint *ngIf="emailAutofilled">Autofilled!</mat-hint>
-                          </mat-form-field>
-                          <mat-form-field>
-                              <mat-label style="color:black;">classViewR0cks!</mat-label>
-                              <input matInput #Password>
-                              <mat-hint *ngIf="passwordAutofilled">Autofilled!</mat-hint>
-                          </mat-form-field>
-                          <button mat-raised-button style="margin-right:auto; width: fit-content; background-color: #3f51b5; color:white;">
-                            Save Changes
-                        </button>
-                    </div>
-                  </form>
-            </div>
-            <div>
-                <h3 style="padding: 4px;">Notification Settings:</h3>
-                <mat-form-field appearance="fill">
-                <mat-label>Every Post</mat-label>
-                <select matNativeControl required>
-                <option value="posts">Every Post</option>
-                <option value="questions">Every Question</option>
-                <option value="answers">Every Answer</option>
-                <option value="tPosts">Every Teacher Post</option>
-                <option value="none">Nothing</option>
-                </select>
-                </mat-form-field>
+            <div style="padding-top: 15%;">
+                <mat-slide-toggle color="primary">Light/Dark Mode</mat-slide-toggle>
             </div>
         </div>
+        <div class = "rightCol" style="padding-top: 10px;">
+            <h3 style="padding: 4px;">Profile Information:</h3>
+            <div fxLayout="column wrap">
+                <div style="padding: 20px;" class = "editField">
+                    <form (submit)="$event.preventDefault()">
+                        <div fxLayout="column wrap">
+                            <mat-form-field>
+                                <mat-label style="color:black;">Lyla Page</mat-label>
+                                <input matInput #Username>
+                                <mat-hint *ngIf="usernameAutofilled">Autofilled!</mat-hint>
+                              </mat-form-field>
+                              <mat-form-field>
+                                  <mat-label style="color:black;">lylaPage@classview.com</mat-label>
+                                  <input matInput #Email>
+                                  <mat-hint *ngIf="emailAutofilled">Autofilled!</mat-hint>
+                              </mat-form-field>
+                              <mat-form-field>
+                                  <mat-label style="color:black;">classViewR0cks!</mat-label>
+                                  <input matInput #Password>
+                                  <mat-hint *ngIf="passwordAutofilled">Autofilled!</mat-hint>
+                              </mat-form-field>
+                              <button mat-raised-button style="margin-right:auto; width: fit-content; background-color: #3f51b5; color:white;">
+                                Save Changes
+                            </button>
+                        </div>
+                      </form>
+                </div>
+                <div>
+                    <h3 style="padding: 4px;">Notification Settings:</h3>
+                    <mat-form-field appearance="fill">
+                    <mat-label>Every Post</mat-label>
+                    <select matNativeControl required>
+                    <option value="posts">Every Post</option>
+                    <option value="questions">Every Question</option>
+                    <option value="answers">Every Answer</option>
+                    <option value="tPosts">Every Teacher Post</option>
+                    <option value="none">Nothing</option>
+                    </select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
