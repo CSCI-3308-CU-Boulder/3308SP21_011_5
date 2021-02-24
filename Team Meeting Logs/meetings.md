@@ -1,3 +1,16 @@
+# 02/24/2021
+Meeting Starts: We are all here!
+John: Worked on Kanban Board, assisted with Angular and setting up some features!
+  No Issues.
+Matt: Worked on UI for the notification tabs. On screen notifications are up there.
+  No Issues.
+Omar: Worked on the HomePage to display all the posts for the main page, standardized the post features. Also working on UI for homepage.
+  No Issues.
+Carol: Profile page is made with some features with Angular.Yep!
+  No Issues.
+Connor: Login and Registration Page. Looking more into Angular.
+  No Issues.
+
 # 02/10/2021
 Meeting Starts: Reminder to attend this meeting at 12:45PM MST.
 <br></br>
