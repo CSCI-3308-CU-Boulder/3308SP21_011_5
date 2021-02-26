@@ -61,5 +61,44 @@
                     </mat-form-field>
                 </div>
             </div>
+            <div>
+                <table mat-table [dataSource]="studentRoster" style="border-radius: 3%; width: 100%; padding-bottom: 4%; padding-top: 2%; background-color: whitesmoke; margin-bottom: 6%;">
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef>Id. </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{element.id}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef>Name. </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{element.name}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="activity">
+                        <th mat-header-cell *matHeaderCellDef>Weekly Activity. </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{element.activity}}
+                        </td>
+                    </ng-container>
+                    <ng-container matColumnDef="status">
+                        <th mat-header-cell *matHeaderCellDef>Status. </th>
+                        <td mat-cell *matCellDef="let element">
+                            <mat-form-field appearance="fill">
+                                <mat-label style="background-color: transparent; color:black;">{{element.status}}</mat-label>
+                                <select matNativeControl required>
+                                <option value="posts">Active</option>
+                                <option value="questions">Banned for 30 Minutes.</option>
+                                <option value="answers">Banned for 1 Hour.</option>
+                                <option value="tPosts">Banned for 1 Day.</option>
+                                <option value="none">Banned Forever.</option>
+                                </select>
+                            </mat-form-field>
+                        </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </div>
         </div>
     </div>

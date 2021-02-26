@@ -2,11 +2,28 @@
 import {AutofillMonitor} from '@angular/cdk/text-field';
 import {AfterViewInit, Component, ElementRef, OnDestroy, ViewChild, OnInit} from '@angular/core';
 
+
+export interface UserData{
+  id: number;
+  name: string;
+  activity: number;
+  status: string;
+}
+
+const ELEMENT_DATA: UserData[] = [
+  {id: 1, name: 'John K', activity: 4, status: 'Active.'},
+  {id: 2, name: 'Omar D', activity: 4, status: 'Active.'},
+  {id: 3, name: 'Connor L', activity: 2, status: 'Active.'},
+  {id: 4, name: 'Matt Z', activity: 3, status: 'Active.'},
+  {id: 5, name: 'Carol C', activity: 2, status: 'Active.'},
+];
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
+
 export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('Username', {read: ElementRef}) username: ElementRef<HTMLElement>;
   @ViewChild('Email', {read: ElementRef}) email: ElementRef<HTMLElement>;
@@ -14,13 +31,14 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
   usernameAutofilled: boolean;
   emailAutofilled: boolean;
   passwordAutofilled: boolean;
+  displayedColumns: string[] = ['id','name','activity','status'];
+  studentRoster = ELEMENT_DATA;
+  url;
 
   constructor(private _autofill: AutofillMonitor) { }
 
   ngOnInit(): void {
   }
-
-  url;
 
   onSelectFile(event) {
     if (event.target.files && event.target.files[0]) {
@@ -35,7 +53,8 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   delete(){
-    this.url = '';
+    document.getElementById('fileInput').innerHTML = "";
+    this.url = null;
   }
 
   ngAfterViewInit() {
