@@ -15,6 +15,7 @@ import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoggedInComponent,
     ProfileComponent,
     AlertComponent,
+    LoggedInNavbarComponent,
   ],
   imports: [
     BrowserModule,
