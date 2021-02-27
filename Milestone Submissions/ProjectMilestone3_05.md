@@ -17,3 +17,11 @@ Landing Page <br>
 ![Imgur](https://imgur.com/PqfgBgZ.jpg)
 
 ## TA Meeting Notes
+
+
+### Qustions by the TA
+What features were completed?
+What worked during the demo?
+What issues were faced either during the development or during the demo?
+What were the suggestions offered by the TA?
+Individual contributions by each team membe?
