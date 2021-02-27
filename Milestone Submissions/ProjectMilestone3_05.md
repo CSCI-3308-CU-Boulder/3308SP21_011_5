@@ -20,8 +20,16 @@ Landing Page <br>
 
 
 ### Qustions by the TA
-What features were completed?
-What worked during the demo?
-What issues were faced either during the development or during the demo?
-What were the suggestions offered by the TA?
-Individual contributions by each team membe?
+What features were completed? <br>
+We have completed the Light and Dark Mode, the Login Page, the Home Page, and the Landing Page. <br>
+What worked during the demo? <br>
+
+What issues were faced either during the development or during the demo? <br>
+Light and Dark Mode has possed some problems but will work better with time. <br>
+What were the suggestions offered by the TA? <br>
+Individual contributions by each team members? <br>
+Matt Zarifa: <br>
+Omar Dajani: <br>
+John Korhel: <br>
+Connor Liu: <br>
+Caroline Chang: <br>
