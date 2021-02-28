@@ -2,36 +2,43 @@
 <router-outlet></router-outlet>
 <app-navbar></app-navbar>
 
-<div class ="formContainer" fxLayout="column" fxLayoutAlign="center center">
-    <mat-form-field appearance="outline">
+<div style="background-image: url('../../../assets/classviewBackground.jpg'); height: 100%; margin-top: 0 !important;">
+<div style="height: 10%;"></div>
+  <div class ="formContainer" fxLayout="column" fxLayoutAlign="center center" style="margin-left: auto; margin-right: auto; background-color: rgb(255, 255, 255); width: 500px; padding-left: 4%; padding-right: 4%; padding-bottom: 4%; padding-top: 2%; border-radius: 4%;">
+    <h1>Register</h1>
+    
+    <mat-form-field appearance="outline" style="width: 90%;">
       <mat-label>Full Name</mat-label>
       <input matInput placeholder="John Smith">
       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     </mat-form-field>
 
 
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" style="width: 90%;">
         <mat-label>Enter your email</mat-label>
         <input matInput placeholder="pat@example.com" [formControl]="email" required>
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
       </mat-form-field>
 
-  <mat-form-field appearance="outline">
+  <mat-form-field appearance="outline" style="width: 90%;">
     <mat-label>Choose a Password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'">
+    <input matInput [type]="hide ? 'password' : 'text'" (change)="checkPassword('passwordField')" id="passwordField" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
   </mat-form-field>
+  <div style="font-size: smaller;" class="passLowLabel hidden" id="strengthLabel">Poor</div>
+  <div class="passLowBar hidden" style="margin-bottom: 3%;" id="strengthBar"></div>
 
-  <mat-form-field appearance="outline">
+  <mat-form-field appearance="outline" style="width: 90%;">
     <mat-label>Confirm Password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'">
+    <input matInput [type]="hide ? 'password' : 'text'" (change)="confirmPassword(this)" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
   </mat-form-field>
 
-<button mat-flat-button color="primary">Register</button>
+<button mat-flat-button color="primary" class="hidden" id="registerButton">Register</button>
+</div>
 </div>
