@@ -33,7 +33,7 @@
 
   <mat-form-field appearance="outline" style="width: 90%;">
     <mat-label>Confirm Password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'" (change)="confirmPassword(this)" required>
+    <input matInput [type]="hide ? 'password' : 'text'" (change)="confirmPassword('passwordConfirmField')" id="passwordConfirmField" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>

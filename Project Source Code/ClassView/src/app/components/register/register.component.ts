@@ -77,14 +77,15 @@ export class RegisterComponent implements OnInit {
   }
 
   confirmPassword(input){
-    this.verPassword = input.value;
+    this.verPassword = (<HTMLInputElement>document.getElementById(input)).value;
     this.passVerGood = (this.verPassword == this.password);
     this.activateTurnIn();
   }
 
   //Handles activation and diactivation of the register button.
   activateTurnIn(){
-    if(this.emailGood && this.passGood && this.passVerGood){
+    //this.emailGood && This does not fully work so I am putting it on the backburner for now. I absolve myself of duties until I find the strength to do this again.
+    if(this.passGood && this.passVerGood){
       document.getElementById('registerButton').classList.add("found");
       document.getElementById('registerButton').classList.remove("hidden");
     }
