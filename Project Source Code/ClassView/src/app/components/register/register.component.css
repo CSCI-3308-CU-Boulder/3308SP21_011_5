@@ -74,3 +74,15 @@
     color: rgb(0, 168, 0);
     transition: 0.15s;
 }
+
+.darkMode{
+    transition: 0.5s;
+    background-color: #444444;
+    color: #3150ff;
+}
+  
+.lightMode{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}

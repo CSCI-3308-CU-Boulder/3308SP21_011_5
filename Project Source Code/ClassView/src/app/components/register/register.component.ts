@@ -27,19 +27,19 @@ export class RegisterComponent implements OnInit {
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
+      if(!this.email.hasError('email')){
+        this.emailGood = true;
+        this.activateTurnIn();
+        return '';
+      }
       this.emailGood = false;
       this.activateTurnIn();
       return 'You must enter a value';
     }
-    else if(this.email.hasError('email')){
+    if(this.email.hasError('email')){
       this.emailGood = false;
       this.activateTurnIn();
       return 'Not a valid email';
-    }
-    else{
-      this.emailGood = true;
-      this.activateTurnIn();
-      return '';
     }
   }
 
@@ -85,13 +85,17 @@ export class RegisterComponent implements OnInit {
   //Handles activation and diactivation of the register button.
   activateTurnIn(){
     //this.emailGood && This does not fully work so I am putting it on the backburner for now. I absolve myself of duties until I find the strength to do this again.
-    if(this.passGood && this.passVerGood){
+    if(this.passGood && this.passVerGood && this.emailGood){
       document.getElementById('registerButton').classList.add("found");
       document.getElementById('registerButton').classList.remove("hidden");
+      document.getElementById('requirementsText').classList.add("hidden");
+      document.getElementById('requirementsText').classList.remove("found");
     }
     else{
       document.getElementById('registerButton').classList.add("hidden");
       document.getElementById('registerButton').classList.remove("found");
+      document.getElementById('requirementsText').classList.add("found");
+      document.getElementById('requirementsText').classList.remove("hidden");
     }
   }
 

@@ -4,7 +4,7 @@
 
 <div style="background-image: url('../../../assets/classviewBackground.jpg'); height: 100%; margin-top: 0 !important;">
 <div style="height: 10%;"></div>
-  <div class ="formContainer" fxLayout="column" fxLayoutAlign="center center" style="margin-left: auto; margin-right: auto; background-color: rgb(255, 255, 255); width: 500px; padding-left: 4%; padding-right: 4%; padding-bottom: 4%; padding-top: 2%; border-radius: 4%;">
+  <div class ="formContainer lightMode" fxLayout="column" fxLayoutAlign="center center" style="margin-left: auto; margin-right: auto; width: 500px; padding-left: 4%; padding-right: 4%; padding-bottom: 4%; padding-top: 2%; border-radius: 4%;">
     <h1>Register</h1>
     
     <mat-form-field appearance="outline" style="width: 90%;">
@@ -38,7 +38,9 @@
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
   </mat-form-field>
-
 <button mat-flat-button color="primary" class="hidden" id="registerButton">Register</button>
+<div style="font-size: x-small; margin-left: 4.2%; color:red;" id="requirementsText">
+  * Password must include uppercase and lowercase letters as well as special characters and numbers.
+</div>
 </div>
 </div>
