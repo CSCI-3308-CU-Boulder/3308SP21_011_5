@@ -10,7 +10,7 @@ Caroline Chang <br>
 ## Four Features Implemented
 Login Page <br>
 Light and Dark Mode <br>
-Home Page <br>
+Registration Page <br>
 Landing Page <br>
 
 ## Architecture Diagram
