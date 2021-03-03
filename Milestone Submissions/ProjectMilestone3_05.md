@@ -14,7 +14,7 @@ Home Page <br>
 Landing Page <br>
 
 ## Architecture Diagram
-![image](https://user-images.githubusercontent.com/47280380/109747484-0a194c00-7b8c-11eb-8a86-1d9fb6f8c86e.png)
+![image](https://user-images.githubusercontent.com/47280380/109842857-5782d100-7bff-11eb-99cb-ddcffbf2cc8a.png)
 
 ## TA Meeting Notes
 
