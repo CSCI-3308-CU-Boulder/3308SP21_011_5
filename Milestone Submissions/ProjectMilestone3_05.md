@@ -14,7 +14,7 @@ Home Page <br>
 Landing Page <br>
 
 ## Architecture Diagram
-![Imgur](https://imgur.com/PqfgBgZ.jpg)
+![Imgur](https://imgur.com/wisdFbR)
 
 ## TA Meeting Notes
 
