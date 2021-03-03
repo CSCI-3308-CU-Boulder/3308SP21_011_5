@@ -5,18 +5,12 @@ import { RegisterComponent } from './components/register/register.component';  /
 import {LoginComponent} from './components/login/login.component'
 import {LoggedInComponent} from './components/logged-in/logged-in.component'
 import {ProfileComponent} from './components/profile/profile.component'
-import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-import {AuthGuard} from './guard/auth.guard'
 
 //This is my case 
 const routes: Routes = [
     {
         path: '',
         component: HomeComponent
-    },
-    {
-        path: 'verify-email',
-        component: VerifyEmailComponent
     },
     {
         path: 'register',
@@ -28,13 +22,11 @@ const routes: Routes = [
     },
     {
         path: 'loggedIn',
-        component: LoggedInComponent,
-        canActivate: [AuthGuard]
+        component: LoggedInComponent
     },
     {
         path: 'profile',
-        component: ProfileComponent,
-        canActivate: [AuthGuard]
+        component: ProfileComponent
     }
 ];
 
