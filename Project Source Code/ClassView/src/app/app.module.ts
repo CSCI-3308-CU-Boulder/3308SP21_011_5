@@ -18,7 +18,6 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
-<<<<<<< HEAD
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
@@ -35,10 +34,6 @@ var config = {
   appId: "1:320893793125:web:e2ed58d0c0d6961bff278c",
   measurementId: "G-PJ0E5F05BM"
 };
-||||||| f8811e9
-=======
-import { CreateNewPostComponent } from './components/create-new-post/create-new-post.component';
->>>>>>> c87c792570a6d1198a6c98bb7bfdd4d7b90ade79
 
 @NgModule({
   declarations: [
@@ -51,12 +46,7 @@ import { CreateNewPostComponent } from './components/create-new-post/create-new-
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
-<<<<<<< HEAD
     VerifyEmailComponent,
-||||||| f8811e9
-=======
-    CreateNewPostComponent,
->>>>>>> c87c792570a6d1198a6c98bb7bfdd4d7b90ade79
   ],
   imports: [
     BrowserModule,
