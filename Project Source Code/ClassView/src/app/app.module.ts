@@ -16,6 +16,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
+import { CreateNewPostComponent } from './components/create-new-post/create-new-post.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
+    CreateNewPostComponent,
   ],
   imports: [
     BrowserModule,
