@@ -10,11 +10,11 @@ Caroline Chang <br>
 ## Four Features Implemented
 Login Page <br>
 Light and Dark Mode <br>
-Home Page <br>
+Registration Page <br>
 Landing Page <br>
 
 ## Architecture Diagram
-![Imgur](https://imgur.com/PqfgBgZ.jpg)
+![image](https://user-images.githubusercontent.com/47280380/109842857-5782d100-7bff-11eb-99cb-ddcffbf2cc8a.png)
 
 ## TA Meeting Notes
 
