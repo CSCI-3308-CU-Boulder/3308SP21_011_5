@@ -16,7 +16,6 @@
       matInput
       placeholder="pat@example.com"
       [formControl]="email"
-      #email
       required
     />
     <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
@@ -25,8 +24,7 @@
 
   <mat-form-field appearance="outline" style="width: 90%;">
     <mat-label>Enter Password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'" #password
-    required />
+    <input matInput [type]="hide ? 'password' : 'text'" />
     <button
       mat-icon-button
       matSuffix
@@ -37,6 +35,6 @@
       <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
     </button>
   </mat-form-field>
-  <button (click)="authService.SignIn(email.value, password.value)" mat-flat-button color="primary">Login</button>
+  <button (click)="onLoginClick()" mat-flat-button color="primary">Login</button>
 </div>
 </div>
