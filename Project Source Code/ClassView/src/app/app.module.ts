@@ -17,6 +17,7 @@ import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
 import { CreateNewPostComponent } from './components/create-new-post/create-new-post.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CreateNewPostComponent } from './components/create-new-post/create-new-
     AlertComponent,
     LoggedInNavbarComponent,
     CreateNewPostComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
