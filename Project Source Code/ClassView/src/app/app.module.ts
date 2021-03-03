@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +18,22 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+
+// Auth service
+import { AuthService } from "./services/auth/auth.service";
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+
+var config = {
+  apiKey: "AIzaSyCtRSE6cjr25-U24CKSjalMzqgf2z6wSIA",
+  authDomain: "angular-classview.firebaseapp.com",
+  projectId: "angular-classview",
+  storageBucket: "angular-classview.appspot.com",
+  messagingSenderId: "320893793125",
+  appId: "1:320893793125:web:e2ed58d0c0d6961bff278c",
+  measurementId: "G-PJ0E5F05BM"
+};
 
 @NgModule({
   declarations: [
@@ -28,6 +46,7 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
+    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,9 +56,12 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
