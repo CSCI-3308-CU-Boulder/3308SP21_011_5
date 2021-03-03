@@ -21,7 +21,7 @@ Landing Page <br>
 11:48:System Review Complete<br>
   Front end features are complete with some aspects of login not fully functioning.<br>
 11:54: Questions from TA finishes.<br>
-  Database for Amazon is viewed but nothing set up there yet, though firebase is communicating with authentification.
+  Database for Amazon is viewed but nothing set up there yet, though firebase is communicating with authentification.<br>
 11:58: Questions from team mates and closing remarks completed.
   Should we do it all through Spring-boot API or is firebase okay?<br>
   It is okay to use firebase.<br>
