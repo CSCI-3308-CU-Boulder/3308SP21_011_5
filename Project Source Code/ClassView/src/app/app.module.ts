@@ -25,6 +25,8 @@ import { environment } from '../environments/environment';
 
 // Auth service
 import { AuthService } from "./services/auth/auth.service";
+import { SettingComponent } from './components/setting/setting.component';
+import { CreateNewPostComponent } from './components/create-new-post/create-new-post.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { AuthService } from "./services/auth/auth.service";
     AlertComponent,
     LoggedInNavbarComponent,
     VerifyEmailComponent,
+    SettingComponent,
+    CreateNewPostComponent,
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,13 @@
     "json-server": "^0.16.3",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "bootstrap": "4.6.0",
+    "jquery": "1.9.1",
+    "popper.js": "1.16.1",
+    "@angular/localize": "^11.0.0",
+    "@ng-bootstrap/ng-bootstrap": "9.0.0"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.4",
