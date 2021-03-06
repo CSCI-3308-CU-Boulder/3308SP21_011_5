@@ -16,15 +16,6 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
-import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
-
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
-
-// Auth service
-import { AuthService } from "./services/auth/auth.service";
 
 @NgModule({
   declarations: [
@@ -37,7 +28,6 @@ import { AuthService } from "./services/auth/auth.service";
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
-    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,12 +37,9 @@ import { AuthService } from "./services/auth/auth.service";
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    AngularFirestoreModule
+    HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
