@@ -8,11 +8,11 @@ Connor Liu <br>
 Caroline Chang <br>
 
 ## Four Features Implemented
-Login Page <br>
-Light and Dark Mode <br>
-Home Page <br>
-Landing Page <br>
-
+Login Page - Password requiprements, email validation, and some account set up completed.<br>
+Light and Dark Mode - Profile page offers live toggling of UI from light to dark mode as well as a class that can be toggled onto every other change to reflect this light and dark mode setting change.<br>
+Home Page - General post structure is set up and is waiting to be integrated into a post creation tool.<br>
+Landing Page - Describes key features of the sight and looks professional.<br>
+ClassView API is developed as well as amazon database. <br>
 ## Architecture Diagram
 ![Imgur](https://imgur.com/PqfgBgZ.jpg)
 
