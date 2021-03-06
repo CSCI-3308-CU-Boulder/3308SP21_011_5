@@ -15,7 +15,9 @@ import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
+import { KatexModule } from 'ng-katex';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     LoggedInNavbarComponent,
   ],
   imports: [
+    KatexModule,
     BrowserModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
@@ -39,7 +42,8 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     FlexLayoutModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
