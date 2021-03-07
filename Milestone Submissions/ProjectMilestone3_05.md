@@ -35,7 +35,7 @@ What issues were faced either during the development or during the demo? <br>
 Light and Dark Mode has possed some problems but will work better with time. <br>
 How was the Database made? <br>
 We used a firebase communication to the amazon database with the authentification along the way.<br>
-Individual contributions by each team members? <br>
+## Individual contributions by each team members? <br>
 Matt Zarifa: AWS Server, future plan for data representation and implementation.<br>
 Omar Dajani: Made UI elements on the homepage.<br>
 John Korhel: Database set up.<br>
