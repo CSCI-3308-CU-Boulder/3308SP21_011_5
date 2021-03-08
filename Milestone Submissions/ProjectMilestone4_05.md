@@ -17,7 +17,7 @@ Use the Actual Website
 ## Database Design
 
 ## Architecture Diagram
-![Imgur](https://imgur.com/PqfgBgZ.jpg)
+![image](https://user-images.githubusercontent.com/47280380/110366647-6c92a200-7ffb-11eb-819c-fd87aa9f5962.png)
 
 ## Individual contributions by each team members? 
 * Matt Zarifa: AWS Server, future plan for data representation and implementation.<br>
