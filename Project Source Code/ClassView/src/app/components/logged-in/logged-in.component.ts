@@ -37,6 +37,7 @@ export class LoggedInComponent implements OnDestroy {
 
   handleDropDown(id){
     (<HTMLInputElement>document.getElementById("postDropDown_"+id)).classList.toggle("active");
+    (<HTMLInputElement>document.getElementById("replyMaker_"+id)).classList.toggle("active");
   }
 
   selectAnswer(id,num){

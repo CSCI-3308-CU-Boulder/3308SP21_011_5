@@ -52,10 +52,34 @@
                         <p style="padding:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Sit amet venenatis urna cursus eget nunc. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Eleifend quam adipiscing vitae proin sagittis nisl. Odio eu feugiat pretium nibh ipsum consequat nisl. Vel pretium lectus quam id. Ultricies mi eget mauris pharetra et ultrices neque ornare. Id diam maecenas ultricies mi. Quam adipiscing vitae proin sagittis nisl rhoncus mattis.</p>
                     </div>
                 </div>
-                <button mat-raised-button style="margin-top:2%; background-color: #3f51b5; color:white; height: 34%; width: 20%; font-size: small; margin-left: 46%;">
-                    Make a Reply.
-                </button>
             </div>
+        </div>
+        <div id = "replyMaker_1" class="hide">
+            <ejs-richtexteditor #toolsRTE id='alltoolRTE' [toolbarSettings]='tools' class="editor"></ ejs-richtexteditor>
+            <table>
+                <tr>    
+                    <td style="width: 80%;"></td>   
+                    <td>
+                        <div style="width: 30%; flex: 1; margin-top: 9%;">
+                            <div style="font-size: small;">
+                                <mat-form-field appearance="fill">
+                                <mat-label>Post Settings.</mat-label>
+                                <select matNativeControl required>
+                                <option value="publ">Post Publicly</option>
+                                <option value="anon">Post Anonymously</option>
+                                </select>
+                                </mat-form-field>
+                            </div>
+                            </div>
+                    </td>     
+                    <td>
+                        <button mat-raised-button style="background-color: #3f51b5; color:white; height: 60%; font-size: small; margin-left: 8px;">
+                            Post Reply.
+                        </button>
+                    </td> 
+                </tr>
+            </table>
+
         </div>
         <div class="row" style="margin-bottom: 30px;">
             <div class="col-sm-1 text-center"  style="margin:0;padding:0;">
