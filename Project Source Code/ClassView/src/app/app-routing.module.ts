@@ -5,6 +5,7 @@ import { RegisterComponent } from './components/register/register.component';  /
 import {LoginComponent} from './components/login/login.component'
 import {LoggedInComponent} from './components/logged-in/logged-in.component'
 import {ProfileComponent} from './components/profile/profile.component'
+import { PostMakerComponent } from './components/post-maker/post-maker.component';
 
 //This is my case 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
     {
         path: 'profile',
         component: ProfileComponent
+    },
+    {
+        path:'postMaker',
+        component: PostMakerComponent
     }
 ];
 

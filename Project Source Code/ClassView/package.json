@@ -24,6 +24,7 @@
     "@angular/router": "~10.0.5",
     "@ng-select/ng-option-highlight": "0.0.6",
     "@ng-select/ng-select": "^6.1.0",
+    "@syncfusion/ej2-angular-richtexteditor": "^18.4.46",
     "bootstrap": "^4.6.0",
     "json-server": "^0.16.3",
     "ng-katex": "^2.0.3",

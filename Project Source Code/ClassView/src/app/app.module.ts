@@ -15,8 +15,10 @@ import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
-import { KatexModule } from 'ng-katex';
+//import { KatexModule } from 'ng-katex';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
+import { PostMakerComponent } from './components/post-maker/post-maker.component';
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 
 
 @NgModule({
@@ -30,9 +32,10 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
+    PostMakerComponent,
   ],
   imports: [
-    KatexModule,
+    //KatexModule,
     BrowserModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
@@ -40,7 +43,8 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    RichTextEditorAllModule
   ],
   providers: [
   ],
