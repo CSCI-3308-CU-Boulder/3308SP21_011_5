@@ -26,12 +26,12 @@ export class RegisterComponent implements OnInit {
   verPassword: string;
 
   getErrorMessage() {
+    if(!this.email.hasError('email') && this.email.hasError('required')){
+      this.emailGood = true;
+      this.activateTurnIn();
+      return '';
+    }
     if (this.email.hasError('required')) {
-      if(!this.email.hasError('email')){
-        this.emailGood = true;
-        this.activateTurnIn();
-        return '';
-      }
       this.emailGood = false;
       this.activateTurnIn();
       return 'You must enter a value';
@@ -73,6 +73,7 @@ export class RegisterComponent implements OnInit {
     else{
       this.passGood = false;
     }
+    this.confirmPassword('passwordConfirmField');
     this.activateTurnIn();
   }
 
