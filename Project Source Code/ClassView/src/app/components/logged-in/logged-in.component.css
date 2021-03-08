@@ -14,6 +14,18 @@
   color: black;
 }
 
+.active{
+  display: block !important;
+}
+
+.response{
+  margin-left: 6%;
+}
+
+.solution{
+  margin-left: 4% !important;
+}
+
 table{
   width: 100%;
   height: 100%;

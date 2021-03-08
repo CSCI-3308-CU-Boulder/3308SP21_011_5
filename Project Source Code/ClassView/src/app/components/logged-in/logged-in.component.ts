@@ -24,4 +24,13 @@ export class LoggedInComponent implements OnDestroy {
     voteCount--;
     (<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML = voteCount.toString();
   }
+
+  handleDropDown(id){
+    (<HTMLInputElement>document.getElementById("postDropDown_"+id)).classList.toggle("active");
+  }
+
+  selectAnswer(id,num){
+    (<HTMLInputElement>document.getElementById("response_"+id+"_"+num)).classList.toggle("solution");
+    (<HTMLInputElement>document.getElementById("check_"+id+"_"+num)).classList.toggle("fa-check");
+  }
 }
