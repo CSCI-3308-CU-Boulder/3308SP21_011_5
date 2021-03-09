@@ -46,6 +46,18 @@ Students should be able to look up questions and see if they can find the answer
 Use the Actual Website
 
 ## Web Service Design
+* Home
+* ![image](https://user-images.githubusercontent.com/47280380/110504085-aa520200-80b1-11eb-9823-840847c77135.png)
+* Login
+* ![image](https://user-images.githubusercontent.com/47280380/110504139-b8078780-80b1-11eb-9f14-0702df147706.png)
+* Register
+* ![image](https://user-images.githubusercontent.com/47280380/110504182-c35ab300-80b1-11eb-98db-c81654df5844.png)
+* Main Page
+* ![image](https://user-images.githubusercontent.com/47280380/110504257-d66d8300-80b1-11eb-8dcc-551327361ae7.png)
+* Profile
+* ![image](https://user-images.githubusercontent.com/47280380/110504308-e1c0ae80-80b1-11eb-99e9-bc617acb8cc0.png)
+* Post Maker
+* ![image](https://user-images.githubusercontent.com/47280380/110504461-0ae13f00-80b2-11eb-97c9-495b60542c9d.png)
 
 ## Database Design
 
