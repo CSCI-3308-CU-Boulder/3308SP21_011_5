@@ -16,6 +16,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
+
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
@@ -28,6 +29,7 @@ import { AuthService } from "./services/auth/auth.service";
 import { SettingComponent } from './components/setting/setting.component';
 import { CreateNewPostComponent } from './components/create-new-post/create-new-post.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,9 +41,11 @@ import { CreateNewPostComponent } from './components/create-new-post/create-new-
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
+
     VerifyEmailComponent,
     SettingComponent,
     CreateNewPostComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -51,12 +55,9 @@ import { CreateNewPostComponent } from './components/create-new-post/create-new-
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    AngularFirestoreModule
+    HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

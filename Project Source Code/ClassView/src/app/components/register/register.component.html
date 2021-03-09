@@ -16,31 +16,31 @@
 
     <mat-form-field appearance="outline" style="width: 90%;">
         <mat-label>Enter your email</mat-label>
-        <input #email matInput placeholder="pat@example.com" required>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
       </mat-form-field>
 
   <mat-form-field appearance="outline" style="width: 90%;">
     <mat-label>Choose a Password</mat-label>
-    <input #password matInput [type]="hide ? 'password' : 'text'" (change)="checkPassword('passwordField')" id="passwordField" required>
+    <input matInput [type]="hide ? 'password' : 'text'" (change)="checkPassword('passwordField')" id="passwordField" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
   </mat-form-field>
-  <!-- <div style="font-size: smaller;" class="passLowLabel hidden" id="strengthLabel">Poor</div>
-  <div class="passLowBar hidden" style="margin-bottom: 3%;" id="strengthBar"></div> -->
+  <div style="font-size: smaller;" class="passLowLabel hidden" id="strengthLabel">Poor</div>
+  <div class="passLowBar hidden" style="margin-bottom: 3%;" id="strengthBar"></div>
 
-  <!-- <mat-form-field appearance="outline" style="width: 90%;">
+  <mat-form-field appearance="outline" style="width: 90%;">
     <mat-label>Confirm Password</mat-label>
     <input matInput [type]="hide ? 'password' : 'text'" (change)="confirmPassword('passwordConfirmField')" id="passwordConfirmField" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
-  </mat-form-field> -->
-<button (click) ="authService.SignUp(email.value, password.value)" mat-flat-button color="primary" id="registerButton">Register</button>
-<!-- <div style="font-size: x-small; margin-left: 4.2%; color:red;" id="requirementsText">
+  </mat-form-field>
+<button mat-flat-button color="primary" class="hidden" id="registerButton">Register</button>
+<div style="font-size: x-small; margin-left: 4.2%; color:red;" id="requirementsText">
   * Password must include uppercase and lowercase letters as well as special characters and numbers.
-</div> -->
+</div>
 </div>
 </div>
