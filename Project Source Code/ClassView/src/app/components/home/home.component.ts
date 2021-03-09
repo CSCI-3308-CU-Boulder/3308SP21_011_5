@@ -9,6 +9,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  eq = '\\sum_{i=1}^nx_i'
+
   ngOnInit(): void {
   }
 

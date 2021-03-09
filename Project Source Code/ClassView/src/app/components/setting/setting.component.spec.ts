@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { PostMakerComponent } from './post-maker.component';
 
-import { SettingComponent } from './setting.component';
-
-describe('SettingComponent', () => {
-  let component: SettingComponent;
-  let fixture: ComponentFixture<SettingComponent>;
+describe('PostMakerComponent', () => {
+  let component: PostMakerComponent;
+  let fixture: ComponentFixture<PostMakerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SettingComponent ]
+      declarations: [ PostMakerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SettingComponent);
+    fixture = TestBed.createComponent(PostMakerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -13,3 +13,32 @@
   background-color: white;
   color: black;
 }
+
+.active{
+  display: block !important;
+}
+
+.response{
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+.solution{
+  margin-left: 4% !important;
+}
+
+.editor{
+  margin-left: 8%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+}
+
+td{
+  font-size: xx-large;
+  margin:5%;
+}

@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,11 +17,8 @@ import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
-//import { KatexModule } from 'ng-katex';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
-import { PostMakerComponent } from './components/post-maker/post-maker.component';
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
-
+import { CreateNewPostComponent } from './components/create-new-post/create-new-post.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +31,9 @@ import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
-    PostMakerComponent,
+    CreateNewPostComponent,
   ],
   imports: [
-    //KatexModule,
     BrowserModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
@@ -44,10 +42,11 @@ import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
     ReactiveFormsModule,
     FlexLayoutModule,
     HttpClientModule,
-    RichTextEditorAllModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
-  providers: [
-  ],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,13 +2,17 @@
     <mat-toolbar color="primary" class="example-toolbar">
       <h1 class="example-app-name">ClassView</h1>
       <span class="example-spacer"></span>
+      <form style="padding-left: 8px;" class="form-inline md-form form-sm">
+        <input style="height: 32px;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
+        mdbInput>
+      </form>
       <button routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>home</mat-icon>
       </button>
       <button routerLink="/profile"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>account_box</mat-icon>
       </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <button routerLink="/postMaker" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>create</mat-icon>
       </button>
       <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
