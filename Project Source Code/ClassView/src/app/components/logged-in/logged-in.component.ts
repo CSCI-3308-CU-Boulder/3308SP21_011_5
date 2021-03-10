@@ -12,9 +12,10 @@ export class LoggedInComponent implements OnDestroy {
   }
 
   public tools: object = {
+    // font size and background color had to be disengaged.
     items: [
       'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
-      'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
+      'FontName', 'FontSize', '|',
       'LowerCase', 'UpperCase', '|', 'Undo', 'Redo', '|',
       'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|',
       'Indent', 'Outdent', '|', 'CreateLink','CreateTable',
@@ -41,6 +42,14 @@ export class LoggedInComponent implements OnDestroy {
   }
 
   selectAnswer(id,num){
+    var children = (<HTMLInputElement>document.getElementById("postDropDown_"+id)).childNodes;
+    for(var c = 0; c < children.length; c++){
+      var child = (<HTMLInputElement>children[c]);
+      if(child.classList.contains("solution") && child.id != "response_"+id+"_"+num){
+        child.classList.toggle("solution");
+        (<HTMLInputElement>children[c].firstChild.childNodes[1]).classList.toggle("fa-check");
+      }
+    }
     (<HTMLInputElement>document.getElementById("response_"+id+"_"+num)).classList.toggle("solution");
     (<HTMLInputElement>document.getElementById("check_"+id+"_"+num)).classList.toggle("fa-check");
   }
