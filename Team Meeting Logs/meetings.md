@@ -1,3 +1,15 @@
+# 03/10/2021
+Back end is built by John.
+Swagger based API to view where everything goes and what to send to get what.
+  Email registration has been set up to take an input as a post request. Accoutn information is accepted and a token is given to access the site as a whole.
+Connor worked on a post button.
+  Push does not go through for some reason.
+Carol added some stuff to the home page.
+Matt worked on the Amazon back end stuff, run a email address to go through the site stuff.
+
+# 03/3/2021
+Mileston meeting, see milestone 3 for notes.
+
 # 02/24/2021
 Meeting Starts: We are all here!
 John: Worked on Kanban Board, assisted with Angular and setting up some features!
