@@ -43,9 +43,6 @@ Students should be able to look up questions and see if they can find the answer
 
 
 ## Front End Diagram
-Use the Actual Website
-
-## Web Service Design
 Home <br>
 ![image](https://user-images.githubusercontent.com/47280380/110534880-6de3cd80-80d4-11eb-919f-e0149a7a9a45.png) <br>
 Login <br>
@@ -59,7 +56,11 @@ Profile <br>
 Post Maker <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504461-0ae13f00-80b2-11eb-97c9-495b60542c9d.png) <br>
 
+## Web Service Design
+
+
 ## Database Design
+![image](https://user-images.githubusercontent.com/47280380/110979357-58abb080-8319-11eb-89b1-7362a961087e.png)
 
 ## Architecture Diagram
 ![image](https://user-images.githubusercontent.com/47280380/110366647-6c92a200-7ffb-11eb-819c-fd87aa9f5962.png)
