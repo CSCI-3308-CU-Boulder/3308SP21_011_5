@@ -57,7 +57,7 @@ Post Maker <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504461-0ae13f00-80b2-11eb-97c9-495b60542c9d.png) <br>
 
 ## Web Service Design
-
+![image](https://user-images.githubusercontent.com/47280380/111045097-32f9d680-8401-11eb-9509-2fae464f0dde.png)
 
 ## Database Design
 ![image](https://user-images.githubusercontent.com/47280380/110979357-58abb080-8319-11eb-89b1-7362a961087e.png)
@@ -73,3 +73,4 @@ Post Maker <br>
 * Caroline Chang: UI development and some ts code.
 
 ## Challenges
+Some issues with platform and tools but the team has started to power through it.<br>
