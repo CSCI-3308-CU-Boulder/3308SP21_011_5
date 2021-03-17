@@ -1,9 +1,13 @@
 # 03/17/2021
 Matt worked on the SMTP server up and running to do verification emails and notifications.
+<br></br>
 John worked with Matt to get the backend to communicate with the frontend. Easy to understand and see what data we should be passing along.
   Using Email link to confirm and connect a user through login. The login works.
+ <br></br>
 Connor is cleaning up inconsistency of styles. Working on more features.
+<br></br>
 Omar is working on the post page. Loading system for adding and removing comments as well as UI stuff. Responsive work is also being worked on.
+<br></br>
 Caroline is working on the profile page for responsive size as well as light and dark mode.
 
 # 03/10/2021
