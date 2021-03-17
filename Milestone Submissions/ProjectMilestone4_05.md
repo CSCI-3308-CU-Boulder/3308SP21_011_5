@@ -74,3 +74,4 @@ Post Maker <br>
 
 ## Challenges
 Some issues with platform and tools but the team has started to power through it.<br>
+Some issues getting the hosting to work, may have something to do with different servers.<br>
