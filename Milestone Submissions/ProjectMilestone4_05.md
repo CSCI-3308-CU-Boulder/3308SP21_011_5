@@ -43,19 +43,20 @@ Students should be able to look up questions and see if they can find the answer
 
 
 ## Front End Diagram
-Home <br>
+![image](/Images/FrontEnd.png)<br>
+### Home <br>
 ![image](https://user-images.githubusercontent.com/47280380/110534880-6de3cd80-80d4-11eb-919f-e0149a7a9a45.png) <br>
-Login <br>
+### Login <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504139-b8078780-80b1-11eb-9f14-0702df147706.png) <br>
-Register <br>
+### Register <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504182-c35ab300-80b1-11eb-98db-c81654df5844.png) <br>
-Main Page <br>
+### Main Page <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504257-d66d8300-80b1-11eb-8dcc-551327361ae7.png) <br>
-Profile <br>
+### Profile <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504308-e1c0ae80-80b1-11eb-99e9-bc617acb8cc0.png) <br>
-Post Maker <br>
+### Post Maker <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504461-0ae13f00-80b2-11eb-97c9-495b60542c9d.png) <br>
-Home Page <br>
+### Home Page <br>
 ![](/Images/Home.png)
 
 ## Web Service Design
