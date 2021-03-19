@@ -64,13 +64,20 @@ Home Page <br>
 ## Database Design
 ![image](https://user-images.githubusercontent.com/47280380/110979357-58abb080-8319-11eb-89b1-7362a961087e.png)
 
+## Authentication Flow
+
+![image](/Images/AuthFlow.png)
+
+## JWT Validation
+![image](/Images/JWT%20Validation.png)
+
 ## Architecture Diagram
-![image](https://user-images.githubusercontent.com/47280380/110366647-6c92a200-7ffb-11eb-819c-fd87aa9f5962.png)
+![image](/Images/Architecture.png)
 
 ## Individual contributions by each team members? 
 * Matt Zarifa: AWS Server and database work, set up hosting.<br>
 * Omar Dajani: Made UI elements on the homepage and main page.
-* John Korhel: Database set up.
+* John Korhel: API Setup. Back and front end integration.
 * Connor Liu: Planning and application work.
 * Caroline Chang: UI development and some ts code.
 
