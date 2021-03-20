@@ -9,3 +9,11 @@
     text-decoration: none;
     color:white;
 }
+  
+::ng-deep.mat-drawer-over{
+  height: 0px;
+}
+
+::ng-deep.mat-drawer-opened{
+  height: 100%;
+}
