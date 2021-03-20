@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
+import { PostPageComponent } from './components/post-page/post-page.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
     AlertComponent,
     LoggedInNavbarComponent,
     PostMakerComponent,
+    PostPageComponent,
   ],
   imports: [
     //KatexModule,

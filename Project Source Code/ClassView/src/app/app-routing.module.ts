@@ -6,6 +6,7 @@ import {LoginComponent} from './components/login/login.component'
 import {LoggedInComponent} from './components/logged-in/logged-in.component'
 import {ProfileComponent} from './components/profile/profile.component'
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
+import { PostPageComponent } from './components/post-page/post-page.component';
 
 //This is my case 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
     {
         path:'postMaker',
         component: PostMakerComponent
+    },
+    {
+        path:'postPage',
+        component: PostPageComponent
     }
 ];
 
