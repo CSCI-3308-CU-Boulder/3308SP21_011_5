@@ -1,5 +1,7 @@
 import {Component, OnDestroy } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
+import {PostModel} from 'src/app/models/PostModel'
+import {PostService} from 'src/app/shared/post.service'
 
 @Component({
   selector: 'app-logged-in',
@@ -7,8 +9,17 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableServ
   styleUrls: ['./logged-in.component.css']
 })
 export class LoggedInComponent implements OnDestroy {
+  posts$: Array<PostModel> = [];
+
+  constructor(private postService: PostService) {
+    this.postService.getAllPosts().subscribe(post => {
+      this.posts$ = post;
+      console.log(post)
+    })
+  }
+
   ngOnDestroy(): void {
-   
+
   }
 
   public tools: object = {
@@ -21,7 +32,7 @@ export class LoggedInComponent implements OnDestroy {
       'Indent', 'Outdent', '|', 'CreateLink','CreateTable',
       'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
   };
-  
+
   upVote(id){
     var voteCount = parseInt((<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML,10);
     voteCount = isNaN(voteCount) ? 0 : voteCount;
@@ -40,6 +51,8 @@ export class LoggedInComponent implements OnDestroy {
     (<HTMLInputElement>document.getElementById("postDropDown_"+id)).classList.toggle("active");
     (<HTMLInputElement>document.getElementById("replyMaker_"+id)).classList.toggle("active");
   }
+
+
 
   selectAnswer(id,num){
     var children = (<HTMLInputElement>document.getElementById("postDropDown_"+id)).childNodes;

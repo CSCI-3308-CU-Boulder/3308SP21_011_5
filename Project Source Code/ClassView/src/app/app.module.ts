@@ -20,6 +20,7 @@ import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 import {AuthModule} from './auth/auth.module'
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
+import {TokenInterceptor} from './token-interceptor'
 
 
 @NgModule({
@@ -49,11 +50,11 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot()
   ],
   providers: [
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: TokenInterceptor,
-    //   multi: true
-    // }
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })
