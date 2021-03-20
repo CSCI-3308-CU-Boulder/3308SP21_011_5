@@ -12,7 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 //import { KatexModule } from 'ng-katex';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
@@ -49,6 +49,11 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot()
   ],
   providers: [
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: TokenInterceptor,
+    //   multi: true
+    // }
   ],
   bootstrap: [AppComponent]
 })
