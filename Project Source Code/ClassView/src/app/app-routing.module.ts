@@ -6,6 +6,7 @@ import {LoginComponent} from './components/login/login.component'
 import {LoggedInComponent} from './components/logged-in/logged-in.component'
 import {ProfileComponent} from './components/profile/profile.component'
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
+import {SettingComponent} from './components/setting/setting.component';
 
 //This is my case 
 const routes: Routes = [
@@ -32,7 +33,7 @@ const routes: Routes = [
     {
         path:'postMaker',
         component: PostMakerComponent
-    }
+    },
 ];
 
 @NgModule({

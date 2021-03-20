@@ -1,1 +1,24 @@
-<p>setting works!</p>
+
+//put this inside nav-bar
+<mat-menu #setting="matMenu">
+    <button mat-menu-item [matMenuTriggerFor] ="profile">profile</button>
+    <button mat-menu-item [matMenuTriggerFor] ="mode">mode</button>
+  </mat-menu>
+  <button mat-flat-button [matMenuTriggerFor]="setting">setting</button>
+  
+  <mat-menu #profile="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="account">account setting</button>
+    <button mat-menu-item [matMenuTriggerFor]="allPost">viewAllYourPost</button>
+  </mat-menu>
+  <button mat-flat-button [matMenuTriggerFor]="profile">profile</button>
+   <mat-menu #account="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="changeUser">changeUserName</button>
+    <button mat-menu-item [matMenuTriggerFor]="resetPassword">resetPassword</button>
+  </mat-menu>
+  <button mat-flat-button [matMenuTriggerFor]="account">account</button>
+  <mat-menu #mode="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="darkMode">darkMode</button>
+    <button mat-menu-item [matMenuTriggerFor]="dayMode">dayMode</button>
+  </mat-menu>
+  <button mat-flat-button [matMenuTriggerFor]="mode">mode</button>
+ 
