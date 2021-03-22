@@ -21,36 +21,14 @@ export class LoggedInComponent implements OnDestroy {
       'Indent', 'Outdent', '|', 'CreateLink','CreateTable',
       'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
   };
-  
-  upVote(id){
-    var voteCount = parseInt((<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML,10);
-    voteCount = isNaN(voteCount) ? 0 : voteCount;
-    voteCount++;
-    (<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML = voteCount.toString();
-  }
 
-  downVote(id){
-    var voteCount = parseInt((<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML,10);
-    voteCount = isNaN(voteCount) ? 0 : voteCount;
-    voteCount--;
-    (<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML = voteCount.toString();
-  }
-
-  handleDropDown(id){
-    (<HTMLInputElement>document.getElementById("postDropDown_"+id)).classList.toggle("active");
-    (<HTMLInputElement>document.getElementById("replyMaker_"+id)).classList.toggle("active");
-  }
-
-  selectAnswer(id,num){
-    var children = (<HTMLInputElement>document.getElementById("postDropDown_"+id)).childNodes;
-    for(var c = 0; c < children.length; c++){
-      var child = (<HTMLInputElement>children[c]);
-      if(child.classList.contains("solution") && child.id != "response_"+id+"_"+num){
-        child.classList.toggle("solution");
-        (<HTMLInputElement>children[c].firstChild.childNodes[1]).classList.toggle("fa-check");
-      }
+  vote(action, id) {
+    var voteCount = parseInt((<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML,10);
+    if (action == 1) {
+      voteCount = voteCount + 1;
+    } else {
+      voteCount = voteCount - 1;
     }
-    (<HTMLInputElement>document.getElementById("response_"+id+"_"+num)).classList.toggle("solution");
-    (<HTMLInputElement>document.getElementById("check_"+id+"_"+num)).classList.toggle("fa-check");
+    (<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML = voteCount.toString();
   }
 }

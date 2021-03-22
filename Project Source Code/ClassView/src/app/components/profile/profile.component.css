@@ -47,7 +47,9 @@
 }
 
 #fileInput{
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
 }
 
 .leftCol{
@@ -124,10 +126,6 @@
     }
     .rightCol{
         width: 100%;
-    }
-    #fileInput{
-        margin-bottom: 2%;
-        margin-left: 35% !important;
     }
 
     ::ng-deep.mat-form-field-type-mat-native-select{

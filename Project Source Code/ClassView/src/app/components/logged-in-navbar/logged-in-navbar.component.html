@@ -31,11 +31,11 @@
       <a (click)="sidenav.toggle()" style="color: white;"><mat-icon>menu</mat-icon></a>
     </div>
   </mat-toolbar>
-  <mat-sidenav #sidenav fxLayout="row" style="padding-left: 4px;">
+  <!-- Insert darkMode here -->
+  <mat-sidenav #sidenav fxLayout="row" style="padding-left: 4px; width: 100%;">
     <div fxLayout="row">
-      <span class="example-spacer"></span>
       <form style="padding-right: 10px;" class="form-inline md-form form-sm">
-        <input style="height: 32px;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
+        <input style="height: 32px; width: 100%;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
         mdbInput>
       </form>
       <button routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">

@@ -72,11 +72,18 @@ body {
     border: none;
     background: none;
 }
+
+col-3{
+    font-size: 14px;
+}
 @media only screen and (max-width: 800px) {
     img {
         display: none;
     }
     .searchBar {
         display: none;
+    }
+    p{
+        font-size: x-small !important;
     }
 }

@@ -12,3 +12,7 @@
   visibility: visible;
   height: 100%;
 }
+
+::ng-deep.mat-drawer-inner-container{
+  margin-left: auto;
+}

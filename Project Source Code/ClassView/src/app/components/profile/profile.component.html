@@ -9,7 +9,7 @@
                         <div class="background"></div>
                         </label>
                         <br/>
-                        <div fxLayout="column wrap" style="padding: 4%;">
+                        <div fxLayout="column wrap">
                             <input id="fileInput" type='file' (change)="onSelectFile($event)">
                             <button id="deleteButton" style="width: 52px; margin-top: 8px;" *ngIf="url" (click)="delete()" >delete</button>
                         </div>
