@@ -85,7 +85,7 @@ https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/62fc1807018e5ce564
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/6662bfd436e92511f7ef2b82f54b0ff02e4395d2
 * Caroline Chang: UI development and some ts code.
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/4de0d9f8e913133a76299f3d6497f1c81ec3152b
-Jira Board:
+* Kanban Board:
 ![image](https://user-images.githubusercontent.com/47280380/112044342-f3b93d00-8b06-11eb-939b-40c224b6a520.png)
 
 ## Challenges
