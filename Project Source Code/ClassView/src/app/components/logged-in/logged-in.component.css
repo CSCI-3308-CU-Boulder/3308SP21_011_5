@@ -1,109 +1,44 @@
-* {
-  padding: 0;
-  margin: 0;
+.example-spacer {
+    flex: 1 1 auto;
 }
 
-body {
-  font-family: 'Roboto', Arial, sans-serif;
+.darkMode{
+  transition: 0.5s;
+  background-color: #444444;
+  color: #3150ff;
 }
 
-.label {
-  font-size: .625rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: +1.3px;
-  margin-bottom: 1rem;
-}
-
-.searchBar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#searchQueryInput {
-  width: 100%;
-  height: 2.4rem;
-  background: #f5f5f5;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
-}
-
-#searchQuerySubmit {
-  width: 3.5rem;
-  height: 2.8rem;
-  margin-left: -3.5rem;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-
-#searchQuerySubmit:hover {
-  cursor: pointer;
-}
-
-#post-link-btn {
-  width: 93%;
+.lightMode{
+  transition: 0.5s;
   background-color: white;
-  color: grey;
-  text-align: left;
-  outline: none !important;
-  box-shadow: none;
-  border: none;
+  color: black;
 }
 
-#post-link-btn:focus,
-#post-link-btn:active {
-  background-color: #216af6;
-  color: white;
-  border: none;
-  outline: none !important;
-  box-shadow: none;
+.active{
+  display: block !important;
 }
 
-#votebtn {
-  outline: none !important;
-  box-shadow: none;
-  border: none;
-  background: none;
+.response{
+  margin-left: 6%;
+  margin-top: 2%;
 }
 
-.sideBarText{
-  font-size: 14px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.solution{
+  margin-left: 4% !important;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 482px) {
-  img {
-      display: none;
-  }
-  .searchBar {
-      display: none;
-  }
-  .sideBarText{
-    font-size: small;
-  }
+.editor{
+  margin-left: 8%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
-@media only screen and (max-width: 480px) {
-  img {
-    display: none;
-  }
-  .searchBar {
-      display: none;
-  }
-  .sideBarText{
-    font-size: xx-small;
-  }
-  .col-10{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+table{
+  width: 100%;
+  height: 100%;
+}
+
+td{
+  font-size: xx-large;
+  margin:5%;
 }

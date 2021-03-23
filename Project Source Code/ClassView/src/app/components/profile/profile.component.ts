@@ -52,7 +52,6 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  //Deletes the file selected for image save.
   delete(){
     document.getElementById('fileInput').innerHTML = "";
     this.url = null;
@@ -73,34 +72,35 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
     this._autofill.stopMonitoring(this.password);
   }
 
-
-  //Changes the color for light and dark mode.
   changeColor(){
-    //Searches for all elements with the modeToggler Class.
-    const eli = document.getElementsByClassName("modeToggler");
-    let allLight = true;
-    //Checks to see if there are elements with this class and then finds out if it needs to be set to light
-    //or dark mode and then toggles the text within the mode selector.
-    if(eli.length > 0){
-      allLight = eli[0].classList.contains("lightMode") == true;
-      if(allLight){
-        document.getElementById("LDtoggle").innerHTML = "Dark Mode";
+    const darkness = document.getElementsByClassName('darkMode');
+    const lightness = document.getElementsByClassName('lightMode');
+    const formElis = document.getElementsByTagName('mat-label');
+    var toggler = document.getElementById('LDtoggle');
+    if(lightness.length > darkness.length){
+      toggler.innerHTML = 'Dark Mode';
+      for(let c = 0; c < lightness.length; c++){
+        const lux = lightness[c] as HTMLElement;
+        lux.classList.add('darkMode');
+        lux.classList.remove('lightMode');
       }
-      else{
-        document.getElementById("LDtoggle").innerHTML = "Light Mode";
+      for(let c = 0; c < formElis.length; c++){
+        const formEli = formElis[c] as HTMLElement;
+        formEli.classList.add('darkMode');
+        formEli.classList.remove('lightMode');
       }
     }
-    //Iterates over all found elements with modeToggler class and depending on if it was on lightMode before or not and
-    //changes its class to contain light or dark mode.
-    for(let c = 0; c < eli.length; c++){
-      const bit = eli[c] as HTMLElement;
-      if(allLight){
-        bit.classList.remove("lightMode");
-        bit.classList.add("darkMode");
+    else{
+      toggler.innerHTML = 'Light Mode';
+      for(let c = 0; c < darkness.length; c++){
+        const nyx = darkness[c] as HTMLElement;
+        nyx.classList.add('lightMode');
+        nyx.classList.remove('darkMode');
       }
-      else{
-        bit.classList.remove("darkMode");
-        bit.classList.add("lightMode");
+      for(let c = 0; c < formElis.length; c++){
+        const formEli = formElis[c] as HTMLElement;
+        formEli.classList.add('lightMode');
+        formEli.classList.remove('darkMode');
       }
     }
   }

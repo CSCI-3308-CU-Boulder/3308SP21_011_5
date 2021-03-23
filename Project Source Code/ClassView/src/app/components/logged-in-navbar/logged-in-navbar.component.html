@@ -1,41 +1,9 @@
-<div>
-  <router-outlet></router-outlet>
-  <mat-toolbar color="primary" class="example-toolbar">
-    <h1 class="example-app-name">ClassView</h1>
-    <span class="example-spacer"></span>
-    <div fxShow="true" fxHide.lt-md="true">
-      <div fxLayout="row">
-        <form style="padding-right: 10px;" class="form-inline md-form form-sm">
-          <input style="height: 32px;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
-          mdbInput>
-        </form>
-        <button routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>home</mat-icon>
-        </button>
-        <button routerLink="/profile"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>account_box</mat-icon>
-        </button>
-        <button routerLink="/postMaker" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>create</mat-icon>
-        </button>
-        <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon matBadge="2" matBadgeColor="warn">notifications</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>Notification 1</button>
-          <button mat-menu-item>Notification 2</button>
-        </mat-menu>
-      </div>
-    </div>
-    <div fxShow="true" fxHide.gt-sm="true">
-      <a (click)="sidenav.toggle()" style="color: white;"><mat-icon>menu</mat-icon></a>
-    </div>
-  </mat-toolbar>
-  <!-- Insert darkMode here -->
-  <mat-sidenav #sidenav fxLayout="row" style="padding-left: 4px; width: 100%;">
-    <div fxLayout="row">
+<router-outlet></router-outlet>
+    <mat-toolbar color="primary" class="example-toolbar">
+      <h1 class="example-app-name">ClassView</h1>
+      <span class="example-spacer"></span>
       <form style="padding-right: 10px;" class="form-inline md-form form-sm">
-        <input style="height: 32px; width: 100%;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
+        <input style="height: 32px;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
         mdbInput>
       </form>
       <button routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
@@ -54,9 +22,4 @@
         <button mat-menu-item>Notification 1</button>
         <button mat-menu-item>Notification 2</button>
       </mat-menu>
-      <a (click)="sidenav.toggle()" mat-icon-button>
-        <mat-icon>arrow_upward</mat-icon>
-      </a>
-    </div>
-  </mat-sidenav>
-</div>
+    </mat-toolbar>
