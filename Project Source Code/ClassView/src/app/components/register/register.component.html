@@ -2,21 +2,21 @@
 <router-outlet></router-outlet>
 <app-navbar></app-navbar>
 
-<div style="background-image: url('../../../assets/classviewBackground.jpg'); height: 100%; margin-top: 0 !important;">
+<div style="background-image: url('../../../assets/classviewBackground.jpg'); height: 100%; margin-top: 0 !important; background-size: cover;">
 <div style="height: 10%;"></div>
   <div class ="formContainer lightMode" fxLayout="column" fxLayoutAlign="center center" style="margin-left: auto; margin-right: auto; width: 500px; padding-left: 4%; padding-right: 4%; padding-bottom: 4%; padding-top: 2%; border-radius: 4%;">
     <h1>Register</h1>
     
     <mat-form-field appearance="outline" style="width: 90%;">
       <mat-label>Full Name</mat-label>
-      <input matInput placeholder="John Smith">
+      <input matInput placeholder="John Smith" (change)="checkName('nameField')" id='nameField'>
       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     </mat-form-field>
 
 
     <mat-form-field appearance="outline" style="width: 90%;">
         <mat-label>Enter your email</mat-label>
-        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required (change)="checkEmail('emailField')" id="emailField">
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
       </mat-form-field>

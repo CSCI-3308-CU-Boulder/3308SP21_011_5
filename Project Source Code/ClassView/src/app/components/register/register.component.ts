@@ -12,9 +12,10 @@ export class RegisterComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
 
   //Manages the password and password verification status.
+  nameGood = false;
+  emailGood = false;
   passGood = false;
   passVerGood = false;
-  emailGood = false;
 
   //Stores referential class and text for the password strength bar.
   passBarClass = ["passLowBar","passMediumBar","passFairBar","passGreatBar"];
@@ -22,25 +23,30 @@ export class RegisterComponent implements OnInit {
   passLabelWords = ["Poor","Medium","Fair","Great"];
   
   //Local copy of the passwords.
+  name: string;
+  emailAdd: string;
   password: string;
   verPassword: string;
 
   getErrorMessage() {
-    if(!this.email.hasError('email') && this.email.hasError('required')){
-      this.emailGood = true;
-      this.activateTurnIn();
-      return '';
-    }
     if (this.email.hasError('required')) {
-      this.emailGood = false;
-      this.activateTurnIn();
       return 'You must enter a value';
     }
     if(this.email.hasError('email')){
-      this.emailGood = false;
-      this.activateTurnIn();
       return 'Not a valid email';
     }
+  }
+
+  checkName(input){
+    this.name = (<HTMLInputElement>document.getElementById(input)).value;
+    this.nameGood = this.name.length > 0;
+    this.activateTurnIn();
+  }
+
+  checkEmail(input){
+    this.emailAdd = (<HTMLInputElement>document.getElementById(input)).value;
+    this.emailGood = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.emailAdd);
+    this.activateTurnIn();
   }
 
   //Checks to see if the password is up to spec. Being of a certain length
@@ -86,7 +92,7 @@ export class RegisterComponent implements OnInit {
   //Handles activation and diactivation of the register button.
   activateTurnIn(){
     //this.emailGood && This does not fully work so I am putting it on the backburner for now. I absolve myself of duties until I find the strength to do this again.
-    if(this.passGood && this.passVerGood && this.emailGood){
+    if(this.passGood && this.passVerGood && this.emailGood && this.nameGood){
       document.getElementById('registerButton').classList.add("found");
       document.getElementById('registerButton').classList.remove("hidden");
       document.getElementById('requirementsText').classList.add("hidden");
