@@ -43,18 +43,21 @@ Students should be able to look up questions and see if they can find the answer
 
 
 ## Front End Diagram
-Home <br>
+![image](/Images/FrontEnd.png)<br>
+### Home <br>
 ![image](https://user-images.githubusercontent.com/47280380/110534880-6de3cd80-80d4-11eb-919f-e0149a7a9a45.png) <br>
-Login <br>
+### Login <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504139-b8078780-80b1-11eb-9f14-0702df147706.png) <br>
-Register <br>
+### Register <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504182-c35ab300-80b1-11eb-98db-c81654df5844.png) <br>
-Main Page <br>
+### Main Page <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504257-d66d8300-80b1-11eb-8dcc-551327361ae7.png) <br>
-Profile <br>
+### Profile <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504308-e1c0ae80-80b1-11eb-99e9-bc617acb8cc0.png) <br>
-Post Maker <br>
+### Post Maker <br>
 ![image](https://user-images.githubusercontent.com/47280380/110504461-0ae13f00-80b2-11eb-97c9-495b60542c9d.png) <br>
+### Home Page <br>
+![](/Images/Home.png)
 
 ## Web Service Design
 ![image](https://user-images.githubusercontent.com/47280380/111045097-32f9d680-8401-11eb-9509-2fae464f0dde.png)
@@ -62,15 +65,29 @@ Post Maker <br>
 ## Database Design
 ![image](https://user-images.githubusercontent.com/47280380/110979357-58abb080-8319-11eb-89b1-7362a961087e.png)
 
+## Authentication Flow
+
+![image](/Images/AuthFlow.png)
+
+## JWT Validation
+![image](/Images/JWT%20Validation.png)
+
 ## Architecture Diagram
-![image](https://user-images.githubusercontent.com/47280380/110366647-6c92a200-7ffb-11eb-819c-fd87aa9f5962.png)
+![image](/Images/Architecture.png)
 
 ## Individual contributions by each team members? 
-* Matt Zarifa: AWS Server and database work, set up hosting.<br>
+* Matt Zarifa: AWS Server and database work, set up hosting. Commits correspond with John through pair programming.
 * Omar Dajani: Made UI elements on the homepage and main page.
-* John Korhel: Database set up.
+https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/247318558dd656951d86672213ef30e0783816ac
+* John Korhel: API Setup. Back and front end integration.
+https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/62fc1807018e5ce564814369accc0a57963a63de
 * Connor Liu: Planning and application work.
+https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/6662bfd436e92511f7ef2b82f54b0ff02e4395d2
 * Caroline Chang: UI development and some ts code.
+https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/4de0d9f8e913133a76299f3d6497f1c81ec3152b
+* Kanban Board:
+![image](https://user-images.githubusercontent.com/47280380/112044342-f3b93d00-8b06-11eb-939b-40c224b6a520.png)
 
 ## Challenges
 Some issues with platform and tools but the team has started to power through it.<br>
+Some issues getting the hosting to work, may have something to do with different servers.<br>

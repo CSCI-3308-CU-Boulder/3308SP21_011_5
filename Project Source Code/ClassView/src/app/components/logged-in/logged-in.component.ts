@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Component, OnDestroy } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
 import {PostModel} from 'src/app/models/PostModel'
@@ -67,3 +68,96 @@ export class LoggedInComponent implements OnDestroy {
     (<HTMLInputElement>document.getElementById("check_"+id+"_"+num)).classList.toggle("fa-check");
   }
 }
+||||||| b9d2119
+import {Component, OnDestroy } from '@angular/core';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
+
+@Component({
+  selector: 'app-logged-in',
+  templateUrl: './logged-in.component.html',    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, TableService],
+  styleUrls: ['./logged-in.component.css']
+})
+export class LoggedInComponent implements OnDestroy {
+  ngOnDestroy(): void {
+   
+  }
+
+  public tools: object = {
+    // font size and background color had to be disengaged.
+    items: [
+      'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
+      'FontName', 'FontSize', '|',
+      'LowerCase', 'UpperCase', '|', 'Undo', 'Redo', '|',
+      'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|',
+      'Indent', 'Outdent', '|', 'CreateLink','CreateTable',
+      'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
+  };
+  
+  upVote(id){
+    var voteCount = parseInt((<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML,10);
+    voteCount = isNaN(voteCount) ? 0 : voteCount;
+    voteCount++;
+    (<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML = voteCount.toString();
+  }
+
+  downVote(id){
+    var voteCount = parseInt((<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML,10);
+    voteCount = isNaN(voteCount) ? 0 : voteCount;
+    voteCount--;
+    (<HTMLInputElement>document.getElementById("postVoteLabel_"+id)).innerHTML = voteCount.toString();
+  }
+
+  handleDropDown(id){
+    (<HTMLInputElement>document.getElementById("postDropDown_"+id)).classList.toggle("active");
+    (<HTMLInputElement>document.getElementById("replyMaker_"+id)).classList.toggle("active");
+  }
+
+  selectAnswer(id,num){
+    var children = (<HTMLInputElement>document.getElementById("postDropDown_"+id)).childNodes;
+    for(var c = 0; c < children.length; c++){
+      var child = (<HTMLInputElement>children[c]);
+      if(child.classList.contains("solution") && child.id != "response_"+id+"_"+num){
+        child.classList.toggle("solution");
+        (<HTMLInputElement>children[c].firstChild.childNodes[1]).classList.toggle("fa-check");
+      }
+    }
+    (<HTMLInputElement>document.getElementById("response_"+id+"_"+num)).classList.toggle("solution");
+    (<HTMLInputElement>document.getElementById("check_"+id+"_"+num)).classList.toggle("fa-check");
+  }
+}
+=======
+import {Component, OnDestroy } from '@angular/core';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
+
+@Component({
+  selector: 'app-logged-in',
+  templateUrl: './logged-in.component.html',    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, TableService],
+  styleUrls: ['./logged-in.component.css']
+})
+export class LoggedInComponent implements OnDestroy {
+  ngOnDestroy(): void {
+   
+  }
+
+  public tools: object = {
+    // font size and background color had to be disengaged.
+    items: [
+      'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
+      'FontName', 'FontSize', '|',
+      'LowerCase', 'UpperCase', '|', 'Undo', 'Redo', '|',
+      'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|',
+      'Indent', 'Outdent', '|', 'CreateLink','CreateTable',
+      'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
+  };
+
+  vote(action, id) {
+    var voteCount = parseInt((<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML,10);
+    if (action == 1) {
+      voteCount = voteCount + 1;
+    } else {
+      voteCount = voteCount - 1;
+    }
+    (<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML = voteCount.toString();
+  }
+}
+>>>>>>> 5c26fb5fe084981454d0fee9e32ce3a50572948e

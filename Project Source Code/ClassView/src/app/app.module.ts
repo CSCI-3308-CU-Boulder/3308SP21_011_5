@@ -17,10 +17,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
+<<<<<<< HEAD
 import {AuthModule} from './auth/auth.module'
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
 import {TokenInterceptor} from './token-interceptor'
+||||||| b9d2119
+=======
+import { PostPageComponent } from './components/post-page/post-page.component';
+>>>>>>> 5c26fb5fe084981454d0fee9e32ce3a50572948e
 
 
 @NgModule({
@@ -32,7 +37,14 @@ import {TokenInterceptor} from './token-interceptor'
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
+<<<<<<< HEAD
     PostMakerComponent
+||||||| b9d2119
+    PostMakerComponent,
+=======
+    PostMakerComponent,
+    PostPageComponent,
+>>>>>>> 5c26fb5fe084981454d0fee9e32ce3a50572948e
   ],
   imports: [
     //KatexModule,

@@ -1,3 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Okay then I will clean this up here. Sounds good.*/
+.darkMode{
+    transition: 0.5s;
+    background-color: #121212;
+    color: #798dfa;
+}
+  
+.lightMode{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+::ng-depth.mat-label.darkMode{
+    transition: 0.5s;
+    color: #798dfa;
+}
+
+.darkMode > form > div > ::ng-deep.mat-form-field > div > ::ng-deep.mat-form-field-underline{
+    background-color: #798dfa;
+}

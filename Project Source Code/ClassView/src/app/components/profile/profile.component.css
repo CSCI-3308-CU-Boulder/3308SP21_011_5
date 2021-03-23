@@ -1,21 +1,63 @@
-.example-spacer {
-    flex: 1 1 auto;
+/* Light and Dark Mode Stylesheets */
+
+.leftCol.lightMode{
+    background-color: whitesmoke;
 }
 
-.container{
+.leftCol.darkMode{
+    background-color: #222222;
+}
+
+.blockSpace.lightMode{
+    background-color: whitesmoke;
+    border-radius: 3%;
     width: 100%;
 }
+
+.editField.lightMode{
+    border-color:  whitesmoke;
+}
+
+.editField.darkMode{
+    border-color: #222222;
+}
+
+.darkMode ::ng-deep.mat-form-field-infix::after{
+    color: #798dfa ;
+}
+
+.darkMode ::ng-deep.mat-form-field-underline::before{
+    background-color: #798dfa;
+}
+
+.userSettings.lightMode{
+    background-color: whitesmoke;
+}
+
+.userSettings.darkMode{
+    background-color: #222222;
+}
+
+/* Default Styls */
 
 #imgMod{
     border-radius: 50%;
     width: 45%;
-    height: 45%;
+    text-align: center;
+}
+
+#fileInput{
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
 }
 
 .leftCol{
-    align-content: center;
     text-align: center;
-    width: 40%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
 }
 
 .rightCol{
@@ -24,21 +66,78 @@
     align-content: center;
 }
 
+.container{
+    width: 100%;
+}
+
+.leftCol{
+    align-content: center;
+    width: 36%;
+    border-radius: 3%;
+    padding-bottom: 4%;
+    margin: 2%;
+    margin-bottom: 3.5%;
+}
+
 .editField{
     min-height: 30%;
-    border-width: 1px;
+    border-width: 4px;
     border-style: solid;
-    border-color: rgb(116, 116, 116);
+    border-radius: 3%;
 }
 
-.darkMode{
-    transition: 0.5s;
-    background-color: #444444;
-    color: #3150ff;
+.userSettings{
+    border-radius: 3%;
+    width: 100%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    margin-bottom: 6%;
 }
 
-.lightMode{
-    transition: 0.5s;
-    background-color: white;
-    color: black;
+/* Screen Size Specific Styles */
+
+@media screen and (min-width: 800px) {
+    #deleteButton{
+        margin-left: 46%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #fileInput{
+        font-size: small;
+    }
+    #deleteButton{
+        margin-left: 7%;
+    }
+
+    ::ng-deep.mat-form-field-type-mat-native-select{
+        width: 20vw;
+        font-size: small;
+    }
+
+    ::ng-deep.mat-cell{
+        font-size: small !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .leftCol{
+        width: 100% !important;
+    }
+    .rightCol{
+        width: 100%;
+    }
+
+    ::ng-deep.mat-form-field-type-mat-native-select{
+        width: 20vw;
+        font-size: x-small;
+    }
+
+    ::ng-deep.mat-cell{
+        font-size: x-small !important;
+    }
+
+    #fileInput{
+        font-size: x-small;
+    }
 }
