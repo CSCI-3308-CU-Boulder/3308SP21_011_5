@@ -74,3 +74,16 @@
     color: rgb(0, 168, 0);
     transition: 0.15s;
 }
+
+
+@media screen and (min-width: 600px) {
+    .formContainer{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .formContainer{
+        width: 80%;
+    }
+}
