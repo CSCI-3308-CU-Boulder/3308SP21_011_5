@@ -1,3 +1,27 @@
+# 03/24/2021
+Loggin and keep thee features are now implemented.
+<br></br>
+Log in and registration routes are up for use.
+<br></br>
+Sessions where used to store the token used to authenticate the user. Expiration date is used to set up a restart time frame.
+<br></br>
+We have a local environment variable to store user information which may need to be moved up to global variable.
+<br></br>
+Hijacking is not allowed.
+<br></br>
+Omar did front end with Carol and Connor.
+<br></br>
+User sql files are different so John had to fix that a bit.
+<br></br>
+Spring boot will transfer database stuff.
+<br></br>
+Home Page and responsiveness done by Omar.
+<br></br>
+Connor worked on the response page.
+<br></br>
+Carol worked on drop down menu and profile page.
+<br></br>
+
 # 03/17/2021
 Matt worked on the SMTP server up and running to do verification emails and notifications.
 <br></br>
