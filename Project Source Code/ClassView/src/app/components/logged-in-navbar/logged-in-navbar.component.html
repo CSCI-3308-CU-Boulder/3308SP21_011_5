@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <div>
   <router-outlet></router-outlet>
   <mat-toolbar color="primary" class="example-toolbar">
@@ -9,21 +11,21 @@
           <input style="height: 32px;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
           mdbInput>
         </form>
-        <button routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <a routerLink="/loggedIn"mat-icon-button class="example-icon topBarIcon" aria-label="Example icon-button with share icon">
           <mat-icon>home</mat-icon>
-        </button>
-        <button routerLink="/profile"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        </a>
+        <a routerLink="/profile"mat-icon-button class="example-icon topBarIcon" aria-label="Example icon-button with share icon">
           <mat-icon>account_box</mat-icon>
-        </button>
-        <button routerLink="/postMaker" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        </a>
+        <a routerLink="/postMaker" mat-icon-button class="example-icon topBarIcon" aria-label="Example icon-button with share icon">
           <mat-icon>create</mat-icon>
-        </button>
-        <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        </a>
+        <a [matMenuTriggerFor]="menu" mat-icon-button class="example-icon topBarIcon" aria-label="Example icon-button with share icon">
           <mat-icon matBadge="2" matBadgeColor="warn">notifications</mat-icon>
-        </button>
+        </a>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>Notification 1</button>
-          <button mat-menu-item>Notification 2</button>
+          <a mat-menu-item>Notification 1</a>
+          <a mat-menu-item>Notification 2</a>
         </mat-menu>
       </div>
     </div>
@@ -38,21 +40,21 @@
         <input style="height: 32px; width: 100%;" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"
         mdbInput>
       </form>
-      <button routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <a routerLink="/loggedIn"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>home</mat-icon>
-      </button>
-      <button routerLink="/profile"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      </a>
+      <a routerLink="/profile"mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>account_box</mat-icon>
-      </button>
-      <button routerLink="/postMaker" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      </a>
+      <a routerLink="/postMaker" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>create</mat-icon>
-      </button>
-      <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      </a>
+      <a [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon matBadge="2" matBadgeColor="warn">notifications</mat-icon>
-      </button>
+      </a>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>Notification 1</button>
-        <button mat-menu-item>Notification 2</button>
+        <a mat-menu-item>Notification 1</a>
+        <a mat-menu-item>Notification 2</a>
       </mat-menu>
       <a (click)="sidenav.toggle()" mat-icon-button>
         <mat-icon>arrow_upward</mat-icon>

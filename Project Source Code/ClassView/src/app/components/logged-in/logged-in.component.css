@@ -80,6 +80,10 @@ body {
   overflow: hidden;
 }
 
+.h-100{
+  padding-right: 4px;
+}
+
 @media only screen and (max-width: 800px) and (min-width: 482px) {
   img {
       display: none;
@@ -89,6 +93,9 @@ body {
   }
   .sideBarText{
     font-size: small;
+  }
+  p{
+    font-size: medium;
   }
 }
 
@@ -105,5 +112,8 @@ body {
   .col-10{
     padding-left: 0px;
     padding-right: 0px;
+  }
+  p{
+    font-size: small;
   }
 }

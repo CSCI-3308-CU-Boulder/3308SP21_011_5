@@ -2,6 +2,14 @@
     flex: 1 1 auto;
 }
 
+a:hover{
+  color: black;
+}
+
+.topBarIcon:hover{
+  color: white;
+}
+
 ::ng-deep.mat-drawer-over{
   height: 0px;
   visibility: hidden;
