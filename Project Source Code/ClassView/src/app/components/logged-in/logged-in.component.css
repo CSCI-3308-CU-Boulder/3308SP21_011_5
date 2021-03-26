@@ -7,6 +7,11 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+.sideGuard{
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+}
+
 .label {
   font-size: .625rem;
   font-weight: 400;
@@ -83,7 +88,6 @@ body {
 .h-100{
   padding-right: 4px;
 }
-
 @media only screen and (max-width: 800px) and (min-width: 482px) {
   img {
       display: none;
