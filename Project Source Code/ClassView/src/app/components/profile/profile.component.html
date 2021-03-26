@@ -22,7 +22,7 @@
         </div>
         <div class = "rightCol" style="padding-top: 10px;">
             <div fxLayout="column wrap">
-                <h3 style="padding: 4px;">Profile Information:</h3>
+                <div style="padding: 4px;" class="standText">Profile Information:</div>
                 <div style="padding: 20px;" class = "editField lightMode modeToggler">
                     <form (submit)="$event.preventDefault()">
                         <div fxLayout="column wrap">
@@ -48,7 +48,7 @@
                     </form>
                 </div>
                 <div class = "lightMode modeToggler">
-                    <h3 style="padding: 4px;">Notification Settings:</h3>
+                    <div style="padding: 4px;" class="standText">Notification Settings:</div>
                     <mat-form-field appearance="fill">
                     <mat-label>Every Post</mat-label>
                     <select matNativeControl required>
