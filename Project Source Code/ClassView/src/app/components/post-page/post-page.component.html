@@ -8,8 +8,7 @@
 
 <div class="container-fluid h-100">
     <div class="row h-100">
-        <!-- SideBar -->
-        <div class="col-3 shadow text-center">
+        <div class="col-md-3 shadow text-center">
             <div class="wrapper mt-2 mb-2">
                 <div class="searchBar">
                     <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
@@ -90,7 +89,7 @@
             </div>
         </div>
         <!-- Main Body -->
-        <div class="col-9 mt-2">
+        <div class="col-md-9 mt-2">
             <div class="post mb-3">
                 <div class="w-100 text-center rounded-top pt-2 pb-2" style="background: #4051b6;">
                     <h5 style="color:white;">Welcome to CSCI 3308!</h5>
@@ -118,7 +117,7 @@
                 </div>
                 <div class="row w-100 m-0 p-0 pt-2 pb-2" style="background: #F5F5F5;">
                     <div class="col-1 text-center my-auto">
-                        <div>
+                        <div id="vote_system">
                             <button id="votebtn" (click) = "vote(1,0)"><i style="color:#D3D3D3;"class="fas fa-caret-up fa-2x"></i></button>
                             <p class="mb-2 mt-2" id="vote_0">0</p>
                             <button id="votebtn" (click) = "vote(0,0)"><i style="color:#D3D3D3;"class="fas fa-caret-down fa-2x"></i></button>
@@ -140,9 +139,9 @@
                 </div>
                 <div class="row w-100 m-0 p-0 pt-2 pb-2" style="background: #F5F5F5;">
                     <div class="col-1 text-center my-auto">
-                        <div>
+                        <div id="vote_system">
                             <button id="votebtn" (click) = "vote(1,1)"><i style="color:#D3D3D3;"class="fas fa-caret-up fa-2x"></i></button>
-                            <p class="mb-2 mt-2" id="vote_1">0</p>
+                            <p class="m-0 mb-2 mt-2" id="vote_1">0</p>
                             <button id="votebtn" (click) = "vote(0,1)"><i style="color:#D3D3D3;"class="fas fa-caret-down fa-2x"></i></button>
                         </div>
                     </div>
