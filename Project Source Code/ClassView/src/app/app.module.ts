@@ -21,7 +21,8 @@ import {AuthModule} from './auth/auth.module'
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
 import {TokenInterceptor} from './token-interceptor'
-
+import { AuthGuard } from './auth/auth.guard';
+import { LoggedInGuard } from './auth/logged-in.guard';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {TokenInterceptor} from './token-interceptor'
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
-    PostMakerComponent
+    PostMakerComponent,
   ],
   imports: [
     //KatexModule,
@@ -54,7 +55,9 @@ import {TokenInterceptor} from './token-interceptor'
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
       multi: true
-    }
+    },
+    AuthGuard,
+    LoggedInGuard
   ],
   bootstrap: [AppComponent]
 })

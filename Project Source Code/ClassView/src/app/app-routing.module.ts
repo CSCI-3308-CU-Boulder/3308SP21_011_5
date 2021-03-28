@@ -6,32 +6,40 @@ import {LoggedInComponent} from './components/logged-in/logged-in.component'
 import {ProfileComponent} from './components/profile/profile.component'
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import {AuthGuard} from './auth/auth.guard'
+import {LoggedInGuard} from './auth/logged-in.guard'
 
-//This is my case 
+//This is my case
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
+        canActivate: [LoggedInGuard]
     },
     {
         path: 'sign-up',
-        component: SignUpComponent
+        component: SignUpComponent,
+        canActivate: [LoggedInGuard]
     },
     {
         path: 'login',
-        component: LoginComponent
+        component: LoginComponent,
+        canActivate: [LoggedInGuard]
     },
     {
         path: 'loggedIn',
-        component: LoggedInComponent
+        component: LoggedInComponent,
+        canActivate: [AuthGuard]
     },
     {
         path: 'profile',
-        component: ProfileComponent
+        component: ProfileComponent,
+        canActivate: [AuthGuard]
     },
     {
         path:'postMaker',
-        component: PostMakerComponent
+        component: PostMakerComponent,
+        canActivate: [AuthGuard]
     }
 ];
 
