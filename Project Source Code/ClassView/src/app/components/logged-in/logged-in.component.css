@@ -88,36 +88,20 @@ body {
 .h-100{
   padding-right: 4px;
 }
-@media only screen and (max-width: 800px) and (min-width: 482px) {
-  img {
-      display: none;
-  }
-  .searchBar {
-      display: none;
-  }
-  .sideBarText{
-    font-size: small;
-  }
-  p{
-    font-size: medium;
-  }
-}
 
-@media only screen and (max-width: 480px) {
-  img {
-    display: none;
+@media only screen and (max-width: 800px) {
+  .sideBar{
+    flex:none;
+    max-width: 100%;
+    margin: auto;
   }
-  .searchBar {
-      display: none;
-  }
-  .sideBarText{
-    font-size: xx-small;
+  .mainBody{
+    flex:none;
+    max-width: 100%;
+    margin: auto;
   }
   .col-10{
     padding-left: 0px;
     padding-right: 0px;
-  }
-  p{
-    font-size: small;
   }
 }
