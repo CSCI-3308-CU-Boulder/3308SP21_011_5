@@ -92,8 +92,9 @@ body {
 @media only screen and (max-width: 800px) {
   .sideBar{
     flex:none;
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
+    padding-bottom: 8px;
   }
   .mainBody{
     flex:none;

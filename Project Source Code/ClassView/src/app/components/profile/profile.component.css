@@ -116,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 540px){
     /* Makes test smaller in the file input space. */
     #fileInput{
         font-size: small;
@@ -127,7 +127,7 @@
     }
     /* Standardize the text size. */
     .standText{
-        font-size: large;
+        font-size: medium;
         font-weight: 500;
     }
     /* Makes the select drop down smaller. */
@@ -151,7 +151,7 @@
     }
     /* Makes the select drop down smaller. */
     ::ng-deep.mat-form-field-type-mat-native-select{
-        width: 20vw;
+        width: 80px;
         font-size: x-small;
     }
     /* Makes the text smaller in the other user field. */
