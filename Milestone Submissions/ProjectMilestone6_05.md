@@ -35,6 +35,7 @@ ClassView API <br>
 AWS Databse <br>
 
 ## Architecture Diagram
+![image](https://user-images.githubusercontent.com/47280380/112896649-82900180-9093-11eb-9685-2a21def0ba15.png)
 
 
-##Challenges
+## Challenges
