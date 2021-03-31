@@ -1,3 +1,19 @@
+# 03/31/2021
+Project is going okay so far just linking the front end and back end together but more stuff will be dealt with soon
+<br></br>
+Log out functionality was added in, so you only stay logged in for a finite period of time. John and Matt.
+<br></br>
+Matt is still waiting on the smtp confirm email.
+<br></br>
+Omar worked on mobile compatibility.
+<br></br>
+Connor linked the landing page to the comment page.
+<br></br>
+Caroline worked on some more UI stuff and test cases.
+<br></br>
+Only show the functional/ good looking stuff so we do not shoot ourself in the foot.
+<br></br>
+
 # 03/24/2021
 Loggin and keep thee features are now implemented.
 <br></br>
