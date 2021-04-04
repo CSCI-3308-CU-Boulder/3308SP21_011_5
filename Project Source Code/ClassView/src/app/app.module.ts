@@ -23,6 +23,19 @@ import { ToastrModule } from 'ngx-toastr';
 import {TokenInterceptor} from './token-interceptor'
 import { AuthGuard } from './auth/auth.guard';
 import { LoggedInGuard } from './auth/logged-in.guard';
+import { PostTileComponent } from './components/post-tile/post-tile.component';
+import { SectionSideBarComponent } from './components/section-side-bar/section-side-bar.component';
+import { VoteButtonComponent } from './components/vote-button/vote-button.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CreateSectionComponent } from './components/create-section/create-section.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
+import { ListSectionsComponent } from './components/list-sections/list-sections.component';
+import { EditorModule } from '@tinymce/tinymce-angular';
+import {MatChipsModule} from '@angular/material/chips';
+import { MatInputModule } from '@angular/material/input';
+import { MatCommonModule } from '@angular/material/core';
+import { ViewPostComponent } from './components/view-post/view-post.component';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +47,13 @@ import { LoggedInGuard } from './auth/logged-in.guard';
     AlertComponent,
     LoggedInNavbarComponent,
     PostMakerComponent,
+    PostTileComponent,
+    SectionSideBarComponent,
+    VoteButtonComponent,
+    CreateSectionComponent,
+    CreatePostComponent,
+    ListSectionsComponent,
+    ViewPostComponent
   ],
   imports: [
     //KatexModule,
@@ -48,7 +68,15 @@ import { LoggedInGuard } from './auth/logged-in.guard';
     HttpClientModule,
     RichTextEditorAllModule,
     AuthModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    FontAwesomeModule,
+    EditorModule,
+    MatInputModule,
+    MatCommonModule,
+    MatChipsModule
+  ],
+  exports: [
+    MatChipsModule
   ],
   providers: [
     {

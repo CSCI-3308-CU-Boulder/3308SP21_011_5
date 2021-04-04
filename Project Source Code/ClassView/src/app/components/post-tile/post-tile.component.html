@@ -1,0 +1,25 @@
+<div class="row post" *ngFor="let post of data">
+  <div class="col-md-11 postTile">
+    <mat-card>
+      <mat-card-title>
+        <a class="postname" href="{{ post.url }}">{{ post.postName }}</a>
+      </mat-card-title>
+      <mat-card-content>
+        <p class="post-text" [innerHtml]="post.description"></p>
+      </mat-card-content>
+      <mat-card-actions>
+
+
+        <mat-chip-list style="padding-bottom: 10px">
+
+            <mat-chip color="primary" selected style="margin-right:10px;">{{
+              post.duration
+            }}</mat-chip>
+            <mat-chip>Comments({{ post.commentCount }})</mat-chip>
+        </mat-chip-list>
+        <div fxFlex></div>
+        <button mat-flat-button color="primary" (click)="goToPost(post.id)">Go to post</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

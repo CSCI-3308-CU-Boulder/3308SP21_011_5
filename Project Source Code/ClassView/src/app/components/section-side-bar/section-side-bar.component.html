@@ -1,0 +1,10 @@
+
+  <div style="color: black; font-weight: bold">Browse Sections</div>
+  <hr />
+  <span *ngFor="let section of sections">
+      <a href="/view-section/{{section.id}}">{{section.name}}</a>
+      <hr />
+  </span>
+  <div style="text-align: center" *ngIf="displayViewAll">
+      <a style="font-weight: bold" routerLink="/list-sections">View All</a>
+  </div>
