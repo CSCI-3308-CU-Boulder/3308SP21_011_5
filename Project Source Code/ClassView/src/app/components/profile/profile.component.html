@@ -1,43 +1,53 @@
+<!-- This is where the navbar goes. -->
 <app-logged-in-navbar></app-logged-in-navbar>
-    <div class="container lightMode" fxLayout="row wrap">
-        <div class = "leftCol">
+<!-- Main Body of the site, the modeToggler controls the light and dark mode.  -->
+    <div class="container modeToggler lightMode" fxLayout="row wrap">
+        <!-- Contains the Profile Upload and the light and dark mode toggle itself. -->
+        <div class = "leftCol modeToggler lightMode">
             <div fxLayout="column wrap">
+                <!-- Profile Icon -->
                 <div style="padding-top: 6%;">
                     <div>
                         <label class="hoverable" for="fileInput">
+                        <!-- Image itself. -->
                         <img id="imgMod" [src]="url ? url : 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'"> 
                         <div class="background"></div>
                         </label>
                         <br/>
                         <div fxLayout="column wrap">
-                            <input style="margin-left: 35%;" id="fileInput" type='file' (change)="onSelectFile($event)">
-                            <button style="margin-left: 46%; width: 52px; margin-top: 8px;" *ngIf="url" (click)="delete()" >delete</button>
+                            <!-- This is the upload button itself. -->
+                            <input id="fileInput" type='file' (change)="onSelectFile($event)">
+                            <!-- This is the delete option that removes the image if the user wants to change it. -->
+                            <button id="deleteButton" style="width: 52px; margin-top: 8px;" *ngIf="url" (click)="delete()" >delete</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="padding-top: 15%;">
+            <!-- The light/dark toggle button. -->
+            <div style="padding-top: 15%;" id="toggle">
                 <mat-slide-toggle color="primary" (click)="changeColor()"><div id="LDtoggle">Light Mode</div></mat-slide-toggle>
             </div>
         </div>
+        <!-- This is holds the user name, email, as well as user activity and notification settings. -->
         <div class = "rightCol" style="padding-top: 10px;">
-            <h3 style="padding: 4px;">Profile Information:</h3>
             <div fxLayout="column wrap">
-                <div style="padding: 20px;" class = "editField">
+                <!-- Profile information -->
+                <div style="padding: 4px;" class="standText">Profile Information:</div>
+                <div style="padding: 20px;" class = "editField lightMode modeToggler">
                     <form (submit)="$event.preventDefault()">
                         <div fxLayout="column wrap">
                             <mat-form-field>
-                                <mat-label class=" lightMode ">Lyla Page</mat-label>
+                                <mat-label class="modeToggler lightMode">Lyla Page</mat-label>
                                 <input matInput #Username>
                                 <mat-hint *ngIf="usernameAutofilled">Autofilled!</mat-hint>
                             </mat-form-field>
                             <mat-form-field>
-                                <mat-label class=" lightMode ">lylaPage@classview.com</mat-label>
+                                <mat-label class="modeToggler lightMode ">lylaPage@classview.com</mat-label>
                                 <input matInput #Email>
                                 <mat-hint *ngIf="emailAutofilled">Autofilled!</mat-hint>
                             </mat-form-field>
                             <mat-form-field>
-                                <mat-label class=" lightMode ">classViewR0cks!</mat-label>
+                                <mat-label class="modeToggler lightMode ">classViewR0cks!</mat-label>
                                 <input matInput #Password>
                                 <mat-hint *ngIf="passwordAutofilled">Autofilled!</mat-hint>
                             </mat-form-field>
@@ -45,10 +55,11 @@
                                 Save Changes
                             </button>
                         </div>
-                      </form>
+                    </form>
                 </div>
-                <div>
-                    <h3 style="padding: 4px;">Notification Settings:</h3>
+                <!-- Notification settings. -->
+                <div class = "lightMode modeToggler">
+                    <div style="padding: 4px;" class="standText">Notification Settings:</div>
                     <mat-form-field appearance="fill">
                     <mat-label>Every Post</mat-label>
                     <select matNativeControl required>
@@ -61,31 +72,33 @@
                     </mat-form-field>
                 </div>
             </div>
-            <div>
-                <table mat-table [dataSource]="studentRoster" style="border-radius: 3%; width: 100%; padding-bottom: 4%; padding-top: 2%; background-color: whitesmoke; margin-bottom: 6%;">
+            <!-- Shows user activity and information. -->
+            <div class="modeToggler lightMode userSettings">
+                <table style="background-color: transparent !important; width: 100%;" mat-table [dataSource]="studentRoster">
                     <ng-container matColumnDef="id">
-                        <th mat-header-cell *matHeaderCellDef>Id. </th>
-                        <td mat-cell *matCellDef="let element">
+                        <th mat-header-cell *matHeaderCellDef style="color: inherit; font-size: inherit;">Id. </th>
+                        <td mat-cell *matCellDef="let element" style="color: inherit;">
                             {{element.id}}
                         </td>
                     </ng-container>
                     <ng-container matColumnDef="name">
-                        <th mat-header-cell *matHeaderCellDef>Name. </th>
-                        <td mat-cell *matCellDef="let element">
+                        <th mat-header-cell *matHeaderCellDef style="color: inherit;font-size: inherit;">Name. </th>
+                        <td mat-cell *matCellDef="let element" style="color: inherit;">
                             {{element.name}}
                         </td>
                     </ng-container>
                     <ng-container matColumnDef="activity">
-                        <th mat-header-cell *matHeaderCellDef>Weekly Activity. </th>
-                        <td mat-cell *matCellDef="let element">
+                        <th mat-header-cell *matHeaderCellDef style="color: inherit;font-size: inherit;">Weekly Activity. </th>
+                        <td mat-cell *matCellDef="let element" style="color: inherit;">
                             {{element.activity}}
                         </td>
                     </ng-container>
                     <ng-container matColumnDef="status">
-                        <th mat-header-cell *matHeaderCellDef>Status. </th>
-                        <td mat-cell *matCellDef="let element">
+                        <th mat-header-cell *matHeaderCellDef style="color: inherit; font-size: inherit;">Status. </th>
+                        <td mat-cell *matCellDef="let element" style="color:inherit;">
+                            <div style="height: 1.34375em;"></div>
                             <mat-form-field appearance="fill">
-                                <mat-label style="background-color: transparent; color:black;">{{element.status}}</mat-label>
+                                <mat-label style="background-color: transparent;">{{element.status}}</mat-label>
                                 <select matNativeControl required>
                                 <option value="posts">Active</option>
                                 <option value="questions">Banned for 30 Minutes.</option>

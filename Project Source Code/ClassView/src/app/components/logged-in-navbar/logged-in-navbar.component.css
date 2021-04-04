@@ -1,3 +1,37 @@
 .example-spacer {
     flex: 1 1 auto;
-  }
+}
+
+a:hover{
+  color: black;
+}
+
+.topBarIcon:hover{
+  color: white;
+}
+
+.searchStyle {
+  padding: .25rem .5rem;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+::ng-deep.mat-drawer-over{
+  height: 0px;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+::ng-deep.mat-drawer-opened{
+  visibility: visible;
+  height: 100%;
+}
+
+::ng-deep.mat-drawer-inner-container{
+  margin-left: auto;
+}

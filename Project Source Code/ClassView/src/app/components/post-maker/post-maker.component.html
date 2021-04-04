@@ -9,24 +9,20 @@
         </div>
       </form>
     <ejs-richtexteditor #toolsRTE id='alltoolRTE' [toolbarSettings]='tools' class="editor"></ ejs-richtexteditor>
-    <div style="margin-left: 10%; display: flex;">
-        <div style="width: 30%; flex: 1;">
-            <div style="font-size: small;">
-                <h3 style="padding: 4px;">Post Settings:</h3>
-                <mat-form-field appearance="fill">
-                <mat-label>Post Publicly.</mat-label>
-                <select matNativeControl required>
-                <option value="publ">Post Publicly</option>
-                <option value="anon">Post Anonymously</option>
-                </select>
-                </mat-form-field>
-            </div>
+    <div style="margin-left: 10%;">
+        <div style="font-size: small;">
+            <div style="padding: 4px; font-size: large;">Post Settings:</div>
+            <mat-form-field appearance="fill">
+            <mat-label>Post Publicly.</mat-label>
+            <select matNativeControl required>
+            <option value="publ">Post Publicly</option>
+            <option value="anon">Post Anonymously</option>
+            </select>
+            </mat-form-field>
         </div>
-        <div style="width: 30%;">
-            <button mat-raised-button style="margin-top:6%; background-color: #3f51b5; color:white; height: 50%; width: 60%; font-size: medium;">
-                Submit
-            </button>
-        </div>
+        <button mat-raised-button style="background-color: #3f51b5; color:white; height: 50%; font-size: medium;">
+            Submit
+        </button>
     </div>
     <div style="height: 60px;"></div>
 </div>

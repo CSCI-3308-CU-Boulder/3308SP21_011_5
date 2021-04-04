@@ -75,14 +75,15 @@
     transition: 0.15s;
 }
 
-.darkMode{
-    transition: 0.5s;
-    background-color: #444444;
-    color: #3150ff;
+
+@media screen and (min-width: 600px) {
+    .formContainer{
+        width: 500px;
+    }
 }
-  
-.lightMode{
-    transition: 0.5s;
-    background-color: white;
-    color: black;
+
+@media screen and (max-width: 600px) {
+    .formContainer{
+        width: 80%;
+    }
 }

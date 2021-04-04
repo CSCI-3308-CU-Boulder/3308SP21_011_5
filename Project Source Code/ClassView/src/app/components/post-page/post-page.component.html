@@ -1,12 +1,14 @@
 <router-outlet></router-outlet>
 <app-logged-in-navbar></app-logged-in-navbar>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 <div class="container-fluid h-100">
     <div class="row h-100">
-        <!-- SideBar -->
-        <div class="col-3 shadow text-center sideBar">
+        <div class="col-md-3 shadow text-center">
             <div class="wrapper mt-2 mb-2">
                 <div class="searchBar">
                     <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
@@ -23,7 +25,7 @@
                 <div class="row h-100">
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Welcome to CSCI 3308!</p>
+                            <p>Welcome to CSCI 3308!</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -32,7 +34,7 @@
                     </div>
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Exam 1 Curve</p>
+                            <p>Exam 1 Curve</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -41,7 +43,7 @@
                     </div>
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Homework Question (1-A)</p>
+                            <p>Homework Question (1-A)</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -50,7 +52,7 @@
                     </div>
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Team Project</p>
+                            <p>Team Project</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -58,7 +60,7 @@
                     </div>
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Quiz 1 Grades</p>
+                            <p>Quiz 1 Grades</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -67,7 +69,7 @@
                     </div>
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Extension [closed]</p>
+                            <p>Extension [closed]</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -76,7 +78,7 @@
                     </div>
                     <div class="col-10">
                         <button type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
-                            <p class="sideBarText">Lab Connection Issue</p>
+                            <p>Lab Connection Issue</p>
                         </button>
                     </div>
                     <div class="col-2">
@@ -87,13 +89,13 @@
             </div>
         </div>
         <!-- Main Body -->
-        <div class="col-9 mt-2 mainBody">
+        <div class="col-md-9 mt-2">
             <div class="post mb-3">
                 <div class="w-100 text-center rounded-top pt-2 pb-2" style="background: #4051b6;">
                     <h5 style="color:white;">Welcome to CSCI 3308!</h5>
                 </div>
                 <div class="w-100" style="background: #F5F5F5;">
-                    <p class="pl-4 pr-4 pt-3 pb-3">Ut imperdiet augue enim. Pellentesque
+                    <p class="pl-4 pr-4 pt-3 pb-3" style="font-size: 14px;">Ut imperdiet augue enim. Pellentesque
                         malesuada, metus sit amet interdum vulputate, ligula nibh placerat tortor, ac bibendum sem odio
                         vitae arcu. Praesent ut libero id arcu venenatis gravida eget in massa. Fusce lobortis, nisl ac
                         scelerisque laoreet, est dolor viverra neque, non euismod lacus lectus non ex. Integer rutrum,
@@ -114,15 +116,15 @@
                     <h6 style="color:white;">the instructor's answer</h6>
                 </div>
                 <div class="row w-100 m-0 p-0 pt-2 pb-2" style="background: #F5F5F5;">
-                    <div class="col-1 text-center my-auto sideGuard">
-                        <div>
+                    <div class="col-1 text-center my-auto">
+                        <div id="vote_system">
                             <button id="votebtn" (click) = "vote(1,0)"><i style="color:#D3D3D3;"class="fas fa-caret-up fa-2x"></i></button>
                             <p class="mb-2 mt-2" id="vote_0">0</p>
                             <button id="votebtn" (click) = "vote(0,0)"><i style="color:#D3D3D3;"class="fas fa-caret-down fa-2x"></i></button>
                         </div>
                     </div>
-                    <div class="col-11 sideGuard">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ligula purus, elementum et elementum eu, dapibus sit amet elit. Etiam felis mi, luctus convallis nunc egestas, posuere aliquet ante. Etiam hendrerit ultrices odio sit amet fermentum. Nam vestibulum erat ac ultrices gravida. Aliquam erat volutpat. Fusce vel velit condimentum, posuere elit sit amet, hendrerit turpis. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent gravida nec ex nec ornare. Nulla congue condimentum justo a tempor. Quisque dui nibh, sagittis eget ante vel, tempus pretium massa. In consectetur tortor at sapien convallis, fermentum aliquam sem tristique. Fusce ut velit tristique quam vestibulum sollicitudin at quis nisi. Cras ligula est, aliquet non lorem ac, volutpat gravida dolor.</p>
+                    <div class="col-11">
+                        <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ligula purus, elementum et elementum eu, dapibus sit amet elit. Etiam felis mi, luctus convallis nunc egestas, posuere aliquet ante. Etiam hendrerit ultrices odio sit amet fermentum. Nam vestibulum erat ac ultrices gravida. Aliquam erat volutpat. Fusce vel velit condimentum, posuere elit sit amet, hendrerit turpis. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent gravida nec ex nec ornare. Nulla congue condimentum justo a tempor. Quisque dui nibh, sagittis eget ante vel, tempus pretium massa. In consectetur tortor at sapien convallis, fermentum aliquam sem tristique. Fusce ut velit tristique quam vestibulum sollicitudin at quis nisi. Cras ligula est, aliquet non lorem ac, volutpat gravida dolor.</p>
                     </div>
                 </div>
                 <div class="w-100 text-center rounded-bottom pt-2 pb-2 text-right" style="background: #F0F0F0;">
@@ -136,15 +138,15 @@
                     <h6 style="color:white;">students's answer</h6>
                 </div>
                 <div class="row w-100 m-0 p-0 pt-2 pb-2" style="background: #F5F5F5;">
-                    <div class="col-1 text-center my-auto sideGuard">
-                        <div>
+                    <div class="col-1 text-center my-auto">
+                        <div id="vote_system">
                             <button id="votebtn" (click) = "vote(1,1)"><i style="color:#D3D3D3;"class="fas fa-caret-up fa-2x"></i></button>
-                            <p class="mb-2 mt-2" id="vote_1">0</p>
+                            <p class="m-0 mb-2 mt-2" id="vote_1">0</p>
                             <button id="votebtn" (click) = "vote(0,1)"><i style="color:#D3D3D3;"class="fas fa-caret-down fa-2x"></i></button>
                         </div>
                     </div>
-                    <div class="col-11 sideGuard">
-                        <p>Nulla facilisi. Nulla consectetur lectus ipsum, facilisis commodo enim congue at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel leo sed tellus pharetra congue in quis velit. Mauris porta a purus ut finibus. Suspendisse imperdiet cursus iaculis. Phasellus et dui nec nunc dignissim tincidunt. Morbi ipsum sapien, aliquet sed arcu ut, accumsan sollicitudin purus. Aenean eleifend hendrerit egestas.</p>
+                    <div class="col-11">
+                        <p style="font-size: 14px;">Nulla facilisi. Nulla consectetur lectus ipsum, facilisis commodo enim congue at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel leo sed tellus pharetra congue in quis velit. Mauris porta a purus ut finibus. Suspendisse imperdiet cursus iaculis. Phasellus et dui nec nunc dignissim tincidunt. Morbi ipsum sapien, aliquet sed arcu ut, accumsan sollicitudin purus. Aenean eleifend hendrerit egestas.</p>
                     </div>
                 </div>
                 <div class="w-100 text-center rounded-bottom pt-2 pb-2 text-right" style="background: #F0F0F0;">
