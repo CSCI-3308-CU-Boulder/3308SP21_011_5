@@ -14,6 +14,9 @@ This must be both a diagram that should be easy to read and show how we will try
 Errors can include, individual units failing a test, multiple parts failing to integrate together, Log in checking.<br>
 Stat any overt risks that may occur due to lack of testing. <br>
 
+## Risks
+Some factores we have yet to test and can improve upon had we more time.<br>
+
 ## Individual Contributions.
 MUST INCLUDE SCREENSHOT OF JIRA BOARD!<br>
 Link to latest commits of each member.<br>
