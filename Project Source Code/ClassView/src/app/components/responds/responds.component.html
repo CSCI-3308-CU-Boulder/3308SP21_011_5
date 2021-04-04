@@ -1,8 +1,9 @@
+<b>Your response to this post</b>
 <textarea [(ngModel)]="response"></textarea>
 <br/>
 <br/>
-<button (click)="post()">Response</button>
+<button (click)="post()">submit</button>
 <hr>
-<div>
-    <p>{{response}}</p>
+<div *ngFor="let responses of postResponse">
+    <p>{{responses}}</p>
 </div>
