@@ -30,7 +30,7 @@
       </div>
     </div>
     <div fxShow="true" fxHide.gt-sm="true">
-      <a (click)="sidenav.toggle()" style="color: white;"><mat-icon>menu</mat-icon></a>
+      <a (click)="sidenav.toggle()" style="color: white;" id="main-toggler"><mat-icon>menu</mat-icon></a>
     </div>
   </mat-toolbar>
   <!-- Insert darkMode here -->
@@ -56,7 +56,7 @@
         <a mat-menu-item>Notification 1</a>
         <a mat-menu-item>Notification 2</a>
       </mat-menu>
-      <a (click)="sidenav.toggle()" mat-icon-button>
+      <a (click)="sidenav.toggle()" mat-icon-button id="side-toggler">
         <mat-icon>arrow_upward</mat-icon>
       </a>
     </div>

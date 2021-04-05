@@ -114,6 +114,10 @@
         font-size: x-large;
         font-weight: 500;
     }
+    /* Makes test smaller in the file input space. */
+    #fileInput{
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 800px) and (min-width: 540px){

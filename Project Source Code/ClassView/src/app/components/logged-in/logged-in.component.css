@@ -71,11 +71,10 @@ body {
   box-shadow: none;
 }
 
-#votebtn {
-  outline: none !important;
-  box-shadow: none;
+.votebtn {
   border: none;
-  background: none;
+  background-color: inherit;
+  color: lightgrey;
 }
 
 .sideBarText{

@@ -21,7 +21,7 @@
       </button>
     </div>
     <div fxShow="true" fxHide.gt-sm="true">
-      <a (click)="sidenav.toggle()" style="color: white;"><mat-icon>menu</mat-icon></a>
+      <a (click)="sidenav.toggle()" style="color: white;" id="main-toggler"><mat-icon>menu</mat-icon></a>
     </div>
   </mat-toolbar>
   <mat-sidenav #sidenav fxLayout="row" style="transition: 0.4s;">
@@ -35,7 +35,7 @@
       <button routerLink="/login" mat-flat-button>
         Login
       </button>
-      <a (click)="sidenav.toggle()" mat-flat-button>
+      <a (click)="sidenav.toggle()" mat-flat-button  id="side-toggler">
         <mat-icon>arrow_upward</mat-icon>
       </a>
     </div>

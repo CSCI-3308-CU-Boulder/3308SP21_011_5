@@ -6,6 +6,18 @@ import {
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
+import { AppModule } from './app/app.module';
+import {TestBed} from '@angular/core/testing';
+
+describe('Router: App', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [
+        AppModule
+      ]
+    });
+  });
+});
 
 declare const require: {
   context(path: string, deep?: boolean, filter?: RegExp): {
