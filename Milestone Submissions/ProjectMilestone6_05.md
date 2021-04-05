@@ -10,6 +10,20 @@ John Korhel <br>
 Connor Liu <br>
 Caroline Chang <br>
 
+## All Tools
+Agile 5 Stars<br>
+Peer Programming 5 Stars<br>
+Creately 4 Stars<br>
+UXPin 4 Stars<br>
+GitHub 5 Stars<br>
+Swagger 4<br>
+yarn 4 Stars<br>
+npm 4 Stars<br>
+Bootstrap 4 Stars<br>
+Angular 4 Stars<br>
+ClassView API 5 Stars<br>
+AWS Databse 3 Stars<br>
+
 ## Expected Tools
 Creately<br>
 UXPin<br>
