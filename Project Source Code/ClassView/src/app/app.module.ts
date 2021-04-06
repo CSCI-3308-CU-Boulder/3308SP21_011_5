@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 //import { KatexModule } from 'ng-katex';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
@@ -32,7 +33,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
-    PostMakerComponent
+    PostMakerComponent,
+    RegisterComponent
   ],
   imports: [
     //KatexModule,
