@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DemoMaterialModule } from '../material-module';
-import { LoginComponent } from './login/login.component';
+//import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     SignUpComponent,
-    LoginComponent
+    //LoginComponent
   ],
   imports: [
     CommonModule,
