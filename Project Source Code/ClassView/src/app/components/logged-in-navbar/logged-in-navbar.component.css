@@ -4,6 +4,11 @@
 
 a:hover{
   color: black;
+  text-decoration: unset;
+}
+
+.example-icon:hover{
+  color: white !important;
 }
 
 .topBarIcon:hover{

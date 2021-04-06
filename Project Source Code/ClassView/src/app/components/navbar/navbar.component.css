@@ -9,6 +9,15 @@
     text-decoration: none;
     color:white;
 }
+
+a:hover{
+  color: black;
+  text-decoration: unset;
+}
+
+.example-icon:hover{
+  color: white !important;
+}
   
 ::ng-deep.mat-drawer-over{
   height: 0px;

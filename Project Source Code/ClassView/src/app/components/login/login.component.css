@@ -14,12 +14,12 @@
 
 @media screen and (min-width: 600px){
     .formContainer{
-        width: 80% !important;
+        width: 500px !important;
     }
 }
 
 @media screen and (max-width: 600px){
     .formContainer{
-        width: 80% !important;
+        width: 80%;
     }
 }
