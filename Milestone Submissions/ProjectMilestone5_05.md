@@ -34,7 +34,7 @@ UAT Case: Profile Image Update <br>
     - Users should be able to delete their image. <br>
     - Users should be able to upload a new image. <br>
   + Acceptance Criteria: <br>
-    - Each of the listed test cases should result in the profile image page and file name on site should be updated with each action. <br>
+    Each of the listed test cases should result in the profile image page and file name on site should be updated with each action. <br>
     - Adding an image should update the profile image and the file path would be updated. <br>
     - Deleting the image should change the profile image to the default image and remove the file pathing. <br>
     - Uploading a replacement image should change the file path as well as the new image. <br>
