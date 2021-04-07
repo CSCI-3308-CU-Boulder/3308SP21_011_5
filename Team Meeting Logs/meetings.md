@@ -1,3 +1,11 @@
+# 04/07/2021
+John: Post sections and messages are now some what distinct and there is a comment adding feature as well as some additional information. User information is not appearing but hopefully this will be fixed soon. Comment funcitonality, and post creation has been worked on.<br>
+Matt: SQL Databse is up to date and SMTP server is almost ready to go but amazon wants a website to actually be ported over, has been working on the script is up.<br>
+Omar: Accepted Answer UI is now in.<br>
+Connor: Worked on his own branch porting doesn't seem to work so just fixing home branch.<br>
+Caroline: Worked on Milestone and updated main branch with some new stuff.<br>
+Make sure the demo website has everything on it.<br>
+DO NOT MENTION FEATURES THAT DID NOT MAKE IT THROUGH. <br>
 # 03/31/2021
 Project is going okay so far just linking the front end and back end together but more stuff will be dealt with soon
 <br></br>
