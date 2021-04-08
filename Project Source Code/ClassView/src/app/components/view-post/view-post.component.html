@@ -1,6 +1,6 @@
+<app-logged-in-navbar></app-logged-in-navbar>
 <div class="container">
   <div class="row">
-    <hr />
     <div class="col-md-9">
       <div class="row post">
         <div class="col-md-1">
@@ -32,20 +32,20 @@
           <div style="margin-top: 60px;" *ngFor="let comment of comments">
             <div class="comment">
               <div class="username">
-                <a routerLink="/user/comment.username">{{comment.username}}</a>
+                <a routerLink="/user/comment.username">{{comment.userName}}</a>
               </div>
               <div>
                 <p>{{comment.duration}}</p>
               </div>
-              <b>{{comment.text}}</b>
+              <p>{{comment.text}}</p>
             </div>
             <hr />
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <!-- <div class="col-md-3">
       <app-section-side-bar></app-section-side-bar>
-    </div>
+    </div> -->
   </div>
 </div>
