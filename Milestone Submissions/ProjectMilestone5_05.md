@@ -14,9 +14,9 @@ Caroline Chang <br>
 UAT Case: Registration/Login <br>
 Acceptance Criteria
   + A user cannot submit a registration form without completing all of the mandatory fields in the registration form, these fields include: <br>
-    - Email <br>
-    - Username <br>
-    - Password <br>
+    - Email (containing correct format of numbers and letters followed by an @ website . com/org/....)<br>
+    - Username (Must be not empty.)<br>
+    - Password (Must be at least 8 characters long, contain an uppercase, lowercase, numbers, and a symbol.)<br>
   + A user cannot submit a login form without completing all of the mandatory fields on the login form, these fields include: <br>
     - Username <br>
     - Password <br>
