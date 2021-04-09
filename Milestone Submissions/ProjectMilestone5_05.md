@@ -51,10 +51,10 @@ UAT Case: Creating posts/sections <br>
 
 ## Invidual Contributions
 Matt Zarifa: Hosting set up. https://tinyurl.com/7m2b4ur4<br>
-Omar Dajani: UI Update. https://tinyurl.com/ywvz2e7<br>
+Omar Dajani: UI Update. https://tinyurl.com/y4nr6nz7<br>
 John Korhel: Back End Code. https://tinyurl.com/3x5nmfuj<br>
 Connor Liu: UI Developer. https://tinyurl.com/2k2we3hv<br>
-Caroline Chang: Scribe. https://tinyurl.com/3zyexnr9 <br>
+Caroline Chang: Scribe. https://tinyurl.com/668y69jw <br>
 ![image](https://user-images.githubusercontent.com/47280380/113519452-1e60b800-9541-11eb-88ae-3eed7c38af34.png)
 
 
