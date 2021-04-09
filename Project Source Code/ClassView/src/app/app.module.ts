@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 import { HomeComponent } from './components/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { DemoMaterialModule } from './material-module';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -16,7 +15,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 //import { KatexModule } from 'ng-katex';
 import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in-navbar.component';
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
-import {AuthModule} from './auth/auth.module'
+import {AuthModule} from './auth/auth.module';
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
 import {TokenInterceptor} from './token-interceptor'
@@ -24,18 +23,19 @@ import {TokenInterceptor} from './token-interceptor'
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
+import { NavbarComponent} from './components/navbar/navbar.component'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent,
     LoggedInComponent,
     ProfileComponent,
     AlertComponent,
     LoggedInNavbarComponent,
     PostMakerComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     //KatexModule,
