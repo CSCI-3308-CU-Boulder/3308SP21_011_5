@@ -21,7 +21,6 @@ import {NgxWebstorageModule} from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
 import {TokenInterceptor} from './token-interceptor'
 
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
