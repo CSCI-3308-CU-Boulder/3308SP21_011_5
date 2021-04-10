@@ -1,7 +1,6 @@
 package com.softdev.classview.service;
 
 
-import com.softdev.classview.config.AppConfig;
 import com.softdev.classview.dto.AuthenticationResponse;
 import com.softdev.classview.dto.LoginRequest;
 import com.softdev.classview.dto.RefreshTokenRequest;
@@ -39,7 +38,6 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
     private final JwtProvider jwtProvider;
     private final RefreshTokenService refreshTokenService;
-    private final AppConfig appConfig;
 
     public void signup(RegisterRequest registerRequest) {
         User user = new User();
@@ -55,7 +53,7 @@ public class AuthService {
         mailService.sendMail(new NotificationEmail("Please Activate your Account",
                 user.getEmail(), "Thank you for signing up to Classview, " +
                 "please click on the below url to activate your account : " +
-                appConfig.getUrl() + "/api/auth/accountVerification/" + token));
+                "http://localhost:8080/api/auth/accountVerification/" + token));
     }
 
     @Transactional(readOnly = true)

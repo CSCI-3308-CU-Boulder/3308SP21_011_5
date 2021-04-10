@@ -12,14 +12,13 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import java.time.Instant;
-import javax.persistence.Table;
+
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="classview_users")
 public class User {
     @Id
     @GeneratedValue(strategy = IDENTITY)
