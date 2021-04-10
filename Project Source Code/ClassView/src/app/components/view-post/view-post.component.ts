@@ -33,6 +33,16 @@ export class ViewPostComponent implements OnInit {
     };
   }
 
+  vote(action, id) {
+    var voteCount = parseInt((<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML,10);
+    if (action == 1) {
+      voteCount = voteCount + 1;
+    } else {
+      voteCount = voteCount - 1;
+    }
+    (<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML = voteCount.toString();
+  }
+
   ngOnInit(): void {
     this.getPostById();
     this.getCommentsForPost();

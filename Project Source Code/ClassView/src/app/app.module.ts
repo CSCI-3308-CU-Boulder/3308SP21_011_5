@@ -35,6 +35,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
 import { MatCommonModule } from '@angular/material/core';
 import { ViewPostComponent } from './components/view-post/view-post.component';
+import { PostSidebarComponent } from './components/post-sidebar/post-sidebar.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { ViewPostComponent } from './components/view-post/view-post.component';
     CreateSectionComponent,
     CreatePostComponent,
     ListSectionsComponent,
-    ViewPostComponent
+    ViewPostComponent,
+    PostSidebarComponent
   ],
   imports: [
     //KatexModule,

@@ -11,6 +11,16 @@ import {PostService} from 'src/app/shared/post.service'
 export class LoggedInComponent implements OnInit {
   posts$: Array<PostModel> = [];
 
+  vote(action, id) {
+    var voteCount = parseInt((<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML,10);
+    if (action == 1) {
+      voteCount = voteCount + 1;
+    } else {
+      voteCount = voteCount - 1;
+    }
+    (<HTMLInputElement>document.getElementById("vote_"+id)).innerHTML = voteCount.toString();
+  }
+
   constructor(private postService: PostService) {
     this.postService.getAllPosts().subscribe(post => {
       this.posts$ = post;

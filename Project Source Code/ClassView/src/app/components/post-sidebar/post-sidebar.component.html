@@ -1,0 +1,9 @@
+<div>
+  <div class="row h-100">
+      <div *ngFor="let post of data" class="col-10">
+          <button (click)="goToPost(post.id)" type="button" class="btn btn-primary rounded-lg mb-1" id="post-link-btn">
+              <p>{{post.postName}}</p>
+          </button>
+      </div>
+  </div>
+</div>
