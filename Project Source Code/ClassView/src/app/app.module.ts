@@ -20,6 +20,7 @@ import { LoggedInNavbarComponent } from './components/logged-in-navbar/logged-in
 import { PostMakerComponent } from './components/post-maker/post-maker.component';
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 import { RespondsComponent } from './components/responds/responds.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { RespondsComponent } from './components/responds/responds.component';
     LoggedInNavbarComponent,
     PostMakerComponent,
     RespondsComponent,
+    SearchBarComponent,
   ],
   imports: [
     //KatexModule,

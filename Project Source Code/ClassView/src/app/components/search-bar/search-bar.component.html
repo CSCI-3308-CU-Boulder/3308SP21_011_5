@@ -1,0 +1,56 @@
+<div ng-app="searchBar">
+    <div ng-controller="searchCtrl as ctrl">
+      <md-toolbar>
+        <div id="search-bar" ng-show="ctrl.showPreSearchBar()" class="md-toolbar-tools">
+  
+          <h2>Search a post</h2>
+          <span flex></span>
+  
+        
+          <md-button ng-click="ctrl.initiateSearch()">
+            <md-icon>search</md-icon>
+            <span>Search</span>
+          </md-button>
+  
+        </div>
+  
+        <div ng-show="ctrl.showSearchBar()" class="md-toolbar-tools search-bar">
+  
+          <md-button class="md-icon-button" ng-click="ctrl.submit()">
+            <md-icon>search</md-icon>
+          </md-button>
+  
+          <!-- Input Text -->
+          <md-input-container flex>
+            <!-- <label for="search">Search</label> -->
+            <input id="search-input" type="text" ng-model="search" />
+          </md-input-container>
+  
+          <md-button class="md-icon-button" ng-click="ctrl.endSearch()">
+            <md-icon>close</md-icon>
+          </md-button>
+        </div>
+  
+      </md-toolbar>
+    </div>
+  </div>
+</div>
+  <script>
+    const app = angular.module('searchBar', ['ngMaterial']);
+    app.controller('searchCtrl', function($scope) {
+    var ctrl = this;
+    ctrl.search = null;
+    ctrl.showPreSearchBar = function() {
+      return ctrl.search == null;
+    };
+    ctrl.initiateSearch = function() {
+      ctrl.search = '';
+    };
+    ctrl.showSearchBar = function() {
+      return ctrl.search != null
+    };
+    ctrl.endSearch = function() {
+      return ctrl.search = null;
+    };
+});
+  </script>
