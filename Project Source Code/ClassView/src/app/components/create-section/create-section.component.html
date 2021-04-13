@@ -2,21 +2,54 @@
 <div class="container">
   <div class="row">
 
-      <form class="post-form" [formGroup]="createSectionForm">
+      <form style="padding:30px;" class="post-form" [formGroup]="createSectionForm">
         <div class="form-group">
-          <div>Create Section</div>
-          <hr />
-          <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 5px"
-            placeholder="Title">
-          <textarea type="text" [formControlName]="'description'" style="width: 100%; margin-top: 5px"
-            placeholder="Description"></textarea>
+          <mat-form-field style="margin-right: 20px; width:80%" appearance="outline">
+            <mat-label>Title</mat-label>
+            <input
+              matInput
+              type="text"
+              [formControlName]="'title'"
+              placeholder="Title"
+            />
+          </mat-form-field>
+          <br>
+          <!-- <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 5px"
+            placeholder="Title"> -->
+          <!-- <textarea type="text" [formControlName]="'description'" style="width: 100%; margin-top: 5px"
+            placeholder="Description"></textarea> -->
+
+            <!-- <mat-form-field style="width: 80%" class="example-full-width">
+              <mat-label>Description</mat-label>
+              <textarea [formControlName]="'description'" matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field> -->
+
+            <editor style="margin-right: 20px"
+            [formControlName]="'description'"
+            [init]="{
+              height: 500,
+              menubar: false,
+              plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+              ],
+              toolbar:
+                'undo redo | formatselect | bold italic backcolor | \
+                        alignleft aligncenter alignright alignjustify | \
+                        bullist numlist outdent indent | removeformat | help'
+            }"
+          ></editor>
+
           <div>
             <div style="margin-top: 5px" class="float-right">
-              <button (click)="discard()" class="btnDiscard">Discard</button>
-              <button (click)="createSection()">Create</button>
+              <button style="margin-right:10px;" mat-raised-button color="primary" (click)="createSection()">Create</button>
+              <button mat-raised-button color="warn" (click)="discard()" class="btnDiscard">Discard</button>
             </div>
           </div>
         </div>
+
       </form>
-    </div>
+
   </div>
+</div>

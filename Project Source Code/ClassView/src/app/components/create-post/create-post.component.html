@@ -2,38 +2,65 @@
 <div class="container">
   <div class="row">
     <div class="create-post-container col-md-9">
-      <form class="post-form" [formGroup]="createPostForm">
+      <form
+        style="margin-top: 20px; margin-left: 20px"
+        class="post-form"
+        [formGroup]="createPostForm"
+      >
         <div class="form-group">
-          <div class="create-post-heading">Create Post</div>
-          <hr />
-          <input type="text" [formControlName]="'postName'" class="form-control" style="margin-top: 5px"
-            placeholder="Title">
+          <mat-form-field style="margin-right: 20px" appearance="outline">
+            <mat-label>Title</mat-label>
+            <input
+              matInput
+              type="text"
+              [formControlName]="'postName'"
+              placeholder="Title"
+            />
+          </mat-form-field>
+          <!-- <input type="text" [formControlName]="'postName'" class="form-control" style="margin-top: 5px"
+            placeholder="Title"> -->
 
-          <input type="text" class="form-control" [formControlName]="'url'" style="margin-top: 5px" placeholder="URL">
-
+          <!-- <input type="text" class="form-control" [formControlName]="'url'" style="margin-top: 5px" placeholder="URL"> -->
           <select class="form-control" style="margin-top: 10px" [formControlName]="'sectionName'">
             <option value="" selected disabled>Select Section</option>
             <option *ngFor="let section of sections">{{section.name}}</option>
           </select>
+          <!-- <mat-form-field appearance="outline">
+            <mat-label>Select Section</mat-label>
+            <mat-select class="form-control">
+              <mat-option
+                *ngFor="let section of sections"
+                [value]="section.name"
+                [formControlName]="'sectionName'"
+              >
+                {{ section.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> -->
 
-          <editor [formControlName]="'description'" [init]="{
-                      height: 500,
-                      menubar: false,
-                      plugins: [
-                        'advlist autolink lists link image charmap print preview anchor',
-                        'searchreplace visualblocks code fullscreen',
-                        'insertdatetime media table paste code help wordcount'
-                      ],
-                      toolbar:
-                        'undo redo | formatselect | bold italic backcolor | \
+          <editor style="margin-right: 20px"
+            [formControlName]="'description'"
+            [init]="{
+              height: 500,
+              menubar: false,
+              plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+              ],
+              toolbar:
+                'undo redo | formatselect | bold italic backcolor | \
                         alignleft aligncenter alignright alignjustify | \
                         bullist numlist outdent indent | removeformat | help'
-                    }"></editor>
-          <span>
+            }"
+          ></editor>
+          <span style="padding-top: 20px;">
             <div style="margin-top: 5px" class="float-right">
-              <button (click)="discardPost()" class="btnDiscard">Discard</button>
-              <button (click)="createPost()"
-class="btnCreatePost">Post</button>
+
+              <button style="margin-right: 10px" mat-raised-button color="primary" (click)="createPost()" class="btnCreatePost">Post</button>
+              <button mat-raised-button color="warn" (click)="discardPost()" class="btnDiscard">
+                Discard
+              </button>
             </div>
           </span>
         </div>
