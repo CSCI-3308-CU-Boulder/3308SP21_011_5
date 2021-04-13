@@ -4,18 +4,13 @@ import {AfterViewInit, Component, ElementRef, OnDestroy, ViewChild, OnInit} from
 
 
 export interface UserData{
-  id: number;
-  name: string;
-  activity: number;
-  status: string;
+  username: string;
+  email: string;
+  created: string;
 }
 
 const ELEMENT_DATA: UserData[] = [
-  {id: 1, name: 'John K', activity: 4, status: 'Active.'},
-  {id: 2, name: 'Omar D', activity: 4, status: 'Active.'},
-  {id: 3, name: 'Connor L', activity: 2, status: 'Active.'},
-  {id: 4, name: 'Matt Z', activity: 3, status: 'Active.'},
-  {id: 5, name: 'Carol C', activity: 2, status: 'Active.'},
+  {username: "joij", email: 'John K', created: 'createdDate'},
 ];
 
 @Component({
@@ -31,7 +26,7 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnDestroy {
   usernameAutofilled: boolean;
   emailAutofilled: boolean;
   passwordAutofilled: boolean;
-  displayedColumns: string[] = ['id','name','activity','status'];
+  displayedColumns: string[] = ['username','email','created'];
   studentRoster = ELEMENT_DATA;
   url;
 
