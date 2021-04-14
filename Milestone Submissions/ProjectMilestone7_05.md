@@ -21,7 +21,7 @@ https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5 <br>
 
 ## Contributions
 John Korhel: Back End Development and Integration <br>
-https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/backFrontImplement <br>
+https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/commit/da49493bb68ada5133f1cdf723253094deb4ea51 <br>
 
 Matt Zarifa: Hosting and back end API work <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
