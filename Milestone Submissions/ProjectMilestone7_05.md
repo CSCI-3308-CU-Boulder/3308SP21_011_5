@@ -45,6 +45,6 @@ https://classview-front.herokuapp.com/ <br>
 Backend/API:
 https://classview-app.herokuapp.com/
 
-Due to SMTP server not being completely set up, new users need to be authorized manually. With this in mind, please use the following credentials to log in: <br>
-user: cDev
+Due to SMTP server not being completely set up, new users need to be authorized manually. With this in mind, please use the following credentials to log in: <br><br>
+user: cDev<br>
 pw: dev
