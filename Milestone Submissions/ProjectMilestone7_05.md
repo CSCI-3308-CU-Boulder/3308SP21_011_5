@@ -33,7 +33,7 @@ https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
 Omar Dajani: Home Page, Logged-In Page, and Mobile Compatibility <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
 
-Caroline Chang: Profile Page, Post Creation Page, Login Page, Registration Page, and Menus formating. Scalability for mobile use. <br>
+Caroline Chang: Profile Page, Post Creation Page, Login Page, Registration Page, and Menus UI. Scalability for mobile use. <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
 
 Connor Liu: UI design and development. <br>
