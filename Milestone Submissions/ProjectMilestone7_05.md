@@ -24,7 +24,7 @@ https://team-1602104764652.atlassian.net/secure/RapidBoard.jspa?rapidView=2&sele
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/backFrontImplement <br>
 
 ## Contributions
-John Korhel: Back End Development and Integration <br>
+John Korhel: Back End Development and Integration. <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/backFrontImplement <br>
 
 Matt Zarifa: Hosting and back end API work <br>
@@ -33,10 +33,10 @@ https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
 Omar Dajani: Home Page, Logged-In Page, and Mobile Compatibility <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
 
-Caroline Chang: Profile Page, Post Creation Page, Login Page, Registration Page, and Menus <br>
+Caroline Chang: Profile Page, Post Creation Page, Login Page, Registration Page, and Menus formating. Scalability for mobile use. <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/main <br>
 
-Connor Liu: UI design and development <br>
+Connor Liu: UI design and development. <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/connor <br>
 
 ## Deployment
