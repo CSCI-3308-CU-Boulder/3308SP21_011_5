@@ -40,5 +40,8 @@ Connor Liu: UI design and development. <br>
 https://github.com/CSCI-3308-CU-Boulder/3308SP21_011_5/tree/connor <br>
 
 ## Deployment
+Frontend:
 https://classview-front.herokuapp.com/ <br>
+Backend/API:
+https://classview-app.herokuapp.com/
 
