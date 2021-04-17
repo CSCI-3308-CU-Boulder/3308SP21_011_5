@@ -21,4 +21,5 @@ ClassView is an alternative to platforms like Piazza. With enhanced UI elements,
 * AWS Free tier, most likely Amazon Aurora/RDS
 
 ### Architecture Diagram
-![Imgur](https://imgur.com/PqfgBgZ.jpg)
+![image](https://user-images.githubusercontent.com/47280380/115122761-7dc1bd80-9f6e-11eb-92ec-b5b58f7f94cb.png)
+
